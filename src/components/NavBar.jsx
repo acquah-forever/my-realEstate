@@ -40,7 +40,7 @@ const NavBar = () => {
       <div>
         <AnimatePresence>
           {menu && (
-            <div className='text-white p-3 mt-5 rounded-xl flex  justify-center items-center space-x-4'>
+            <div className='text-white p-3 mt-10 rounded-xl flex  justify-center items-center space-x-4'>
               <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-2xl flex justify-center space-x-5 sm:hidden'>
                 <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Home</a></motion.li>
                 <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Listings</a></motion.li>

@@ -3,9 +3,12 @@ import Hero from './Hero'
 import Listing1 from './Listing1'
 import Listing2 from './Listing2'
 import Listing3 from './Listing3'
+import Listing4 from './Listing4'
 import Interior from '../assets/buildings/interior.jpg'
 import Interior2 from '../assets/buildings/interior2.jpg'
 import Interior3 from '../assets/buildings/interior3.jpg'
+import Interior4 from '../assets/buildings/interior4.jpg'
+
 
 
 
@@ -26,10 +29,16 @@ const Home = () => {
           <Listing2 />
         </div>
       </div>
-            <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interio3})` }}>
+      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior3})` }}>
         <div className='absolute bg-black/20 inset-0'></div>
         <div className='relative z-10'>
-          <Listing1 />
+          <Listing3 />
+        </div>
+      </div>
+      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior4})` }}>
+        <div className='absolute bg-black/20 inset-0'></div>
+        <div className='relative z-10'>
+          <Listing4 />
         </div>
       </div>
 
