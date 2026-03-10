@@ -9,7 +9,7 @@ const ListingForTheDay = () => {
                 <div className='flex space-x-5 text-2xl'>
                     <h1>3 Bed</h1>
                     <h1>2 Bath</h1>
-                    <h1>180Sqm</h1>
+                    <h1>200Sqm</h1>
                 </div>
             </div>
         </div>
