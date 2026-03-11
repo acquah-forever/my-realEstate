@@ -19,8 +19,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className='p-5'>
-      <div className='p-4 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
+    <div className=''>
+      <div className='px-7 py-3 mx-auto bg-white/20 backdrop-blur-2xl top-3 left-0 fixed w-full z-50 flex justify-between items-center '>
         <div className='text-white flex items-center space-x-1'>
           <House className='w-10 h-10' />
           <h1 className='text-2xl md:text-3xl cursor-pointer'>Kojo Addo</h1>
