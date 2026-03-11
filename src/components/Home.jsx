@@ -10,9 +10,6 @@ import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
 
 
-
-
-
 const Home = () => {
   return (
     <div>
