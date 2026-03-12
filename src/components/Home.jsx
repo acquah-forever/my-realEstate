@@ -4,6 +4,7 @@ import Listing1 from './Listing1'
 import Listing2 from './Listing2'
 import Listing3 from './Listing3'
 import Listing4 from './Listing4'
+import Details from './Details'
 import Interior from '../assets/buildings/interior.jpg'
 import Interior2 from '../assets/buildings/interior2.jpg'
 import Interior3 from '../assets/buildings/interior3.jpg'
@@ -38,6 +39,7 @@ const Home = () => {
           <Listing4 />
         </div>
       </div>
+      <Details />
 
     </div>
   )
