@@ -2,15 +2,15 @@ import React from 'react'
 
 const Listing3 = () => {
     return (
-        <div className='p-15 flex justify-center md:justify-start'>
-            <div className='bg-amber-200/70 text-slate-600 200 max-w-lg p-10'>
-                <h1 className='text-3xl sm:text-4xl md:text-6xl mb-10'>Serene Parkside Apartment at The Bluffs</h1>
-                <h2 className='text-xl sm:text-2xl mb-30'>An immaculate apartment offering tranquil park views and minimalist luxury, truly an oasis in the city.</h2>
-                <div className='border-t-2'></div>
-                <div className='mt-20 flex space-x-5 text-xl sm:text-2xl'>
+        <div className='px-6 py-12 sm:px-10 md:px-16 lg:px-24 flex justify-center md:justify-start'>
+            <div className=' bg-amber-200/70 text-slate-600 200 w-full max-w-2xl p-6 sm:p-8 md:p-10 '>
+                <h1 className='text-3xl sm:text-4xl md:text-6xl mb-6'>En Garde City Loft with Skyline View</h1>
+                <h2 className='text-xl sm:text-2xl mb-10'>A stunning loft conversion, blending Industrial Chic with Warm, Contemporary Living</h2>
+                <div className='border-t-2 mb-6'></div>
+                <div className='flex flex-wrap gap-6 text-base sm:text-lg md:text-xl'>
                     <h1>3 Bed</h1>
-                    <h1>3 Bath</h1>
-                    <h1>250Sqm</h1>
+                    <h1>2 Bath</h1>
+                    <h1>200Sqm</h1>
                 </div>
             </div>
         </div>
