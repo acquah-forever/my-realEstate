@@ -39,7 +39,9 @@ const Home = () => {
           <Listing4 />
         </div>
       </div>
-      <Details />
+      <div className='bg-amber-100'>
+        <Details />
+      </div>
 
     </div>
   )
