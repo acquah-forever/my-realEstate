@@ -2,7 +2,7 @@ import React from 'react'
 
 const Listing4 = () => {
     return (
-        <div className='px-6 py-12 sm:px-10 md:px-16 lg:px-24 flex justify-center md:justify-start'>
+        <div className='px-6 py-12 sm:px-10 md:px-16 lg:px-24 flex justify-center md:justify-end'>
             <div className=' bg-amber-200/70 text-slate-600 200 w-full max-w-2xl p-6 sm:p-8 md:p-10 '>
                 <h1 className='text-3xl sm:text-4xl md:text-6xl mb-6'>En Garde City Loft with Skyline View</h1>
                 <h2 className='text-xl sm:text-2xl mb-10'>A stunning loft conversion, blending Industrial Chic with Warm, Contemporary Living</h2>
