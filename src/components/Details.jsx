@@ -30,7 +30,7 @@ const Details = () => {
 
                 <div>
                     <div className='border'></div>
-                    <div className='p-5 flex flex-col gap-4 md:flex-row md:gap-10'>
+                    <div className='p-5 flex flex-col gap-3 md:flex-row md:gap-10'>
                         <h1 className='text-md md:text-xl'>03.</h1>
                         <h1 className='text-md md:text-xl uppercase'>Leasing</h1>
                         <h1 className='text-md md:text-xl'>Skip endless searches. We leverage exclusive access and expert negotiation to pinpoint your ideal home, ensuring a smooth, swift purchase. Your next chapter begins today.</h1>

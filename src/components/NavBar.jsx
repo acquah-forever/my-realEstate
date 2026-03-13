@@ -21,12 +21,12 @@ const NavBar = () => {
   return (
     <div>
       <div className='px-7  py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
-        <a href='#' className='text-white flex items-center space-x-1'>
+        <a href='#' className='text-rose-400 flex items-center space-x-1'>
           <House className='w-10 h-10' />
           <h1 className='text-2xl md:text-3xl cursor-pointer'>Kojo Addo</h1>
         </a>
         <div>
-          <ul className='hidden text-xl text-white sm:flex space-x-7 px-3 py-1'>
+          <ul className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>
             <li><a href="#" className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Home</a></li>
             <li><a href="#listings" className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Listings</a></li>
             <li><a href="#" className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">About</a></li>
@@ -46,10 +46,10 @@ const NavBar = () => {
           {menu && (
             <div className='text-white rounded-xl flex  justify-center items-center'>
               <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-2xl flex justify-center space-x-5 sm:hidden'>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Home</a></motion.li>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#listings' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Listings</a></motion.li>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">About</a></motion.li>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Services</a></motion.li>
+                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block text-xl border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Home</a></motion.li>
+                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#listings' className="inline-block border-b-2 border-transparent text-xl hover:border-white transition-all duration-500 ease-in-out">Listings</a></motion.li>
+                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block text-xl border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">About</a></motion.li>
+                <motion.li variants={children} onClick={() => setMenu(!menu)}> <a href='#' className="inline-block text-xl border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out">Services</a></motion.li>
               </motion.ul>
             </div>
           )}
