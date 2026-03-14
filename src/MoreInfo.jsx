@@ -1,16 +1,40 @@
 import React from 'react'
-import{House} from 'lucide-react'
+import { House } from 'lucide-react'
 
 const MoreInfo = () => {
-  return (
-    <div>
-        <h1>A curated Portfolio of Homes</h1>
-        <House />
-        <h1>Vision and Strategy</h1>
-        <div></div>
-        <h3>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
-    </div>
-  )
+    return (
+        <div className='p-7'>
+            <div className='p-7 border-2 max-w-2xl'>
+                <div className='flex'>
+                    <House />
+                    <h1>A curated Portfolio of Homes</h1>
+                </div>
+                <h1>Vision and Strategy</h1>
+                <div></div>
+                <h3>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
+            </div>
+
+            <div className='p-7 border-2 max-w-2xl'>
+                <div className='flex'>
+                    <House />
+                    <h1>A curated Portfolio of Homes</h1>
+                </div>
+                <h1>Vision and Strategy</h1>
+                <div></div>
+                <h3>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
+            </div>
+
+            <div className='p-7 border-2 max-w-2xl'>
+                <div className='flex'>
+                    <House />
+                    <h1>A curated Portfolio of Homes</h1>
+                </div>
+                <h1>Vision and Strategy</h1>
+                <div></div>
+                <h3>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
+            </div>
+        </div>
+    )
 }
 
 export default MoreInfo
