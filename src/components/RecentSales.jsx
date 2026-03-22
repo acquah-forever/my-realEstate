@@ -13,10 +13,10 @@ const RecentSales = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-0'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0'>
                 <div className='relative'>
                     <div>
-                        <img className='w-98 h-221 object-cover' src={House1} alt='house1' />
+                        <img className='w-full h-221 object-cover' src={House1} alt='house1' />
                     </div>
                     <div className='absolute top-10 bg-amber-300/80 p-4 w-70'>
                         <h1 className='mb-10 text-xl sm:text-2xl'>GREENWICH VILLAGE TOWNHOUSE</h1>
@@ -31,7 +31,7 @@ const RecentSales = () => {
                 </div>
                 <div className='relative'>
                     <div>
-                        <img className='w-100 h-221 object-cover' src={House2} alt='house2' />
+                        <img className='w-full h-221 object-cover' src={House2} alt='house2' />
                     </div>
                     <div className='absolute top-10 bg-amber-300/80 p-4 w-70'>
                         <h1 className='mb-10 text-xl sm:text-2xl'>DOWNTOWN SKYLINE PENTHOUSE</h1>
@@ -47,7 +47,7 @@ const RecentSales = () => {
 
                 <div className='relative'>
                     <div>
-                        <img className='w-md h-221 object-cover' src={House3} alt='house3' />
+                        <img className='w-full h-221 object-cover' src={House3} alt='house3' />
                     </div>
                     <div className='absolute top-10 bg-amber-300/80 p-4 w-70'>
                         <h1 className='mb-10 text-xl sm:text-2xl'>MODERN CITY LOFT WITH TERRACE</h1>
@@ -60,8 +60,6 @@ const RecentSales = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
         </div>
