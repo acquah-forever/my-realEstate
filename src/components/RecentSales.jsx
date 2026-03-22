@@ -16,12 +16,16 @@ const RecentSales = () => {
             <div className='flex'>
                 <div>
                     <img className='w-98 h-221 object-cover' src={House1} alt='house1' />
-                    <h1>GREENWICH VILLAGE TOWNHOUSE</h1>
-                    <h2>a classic pre-war renovated property in an exclusive neighborhood</h2>
-                    <div></div>
-                    <h1>2 Bed</h1>
-                    <h1>2 Bath</h1>
-                    <h1>165 sqm</h1>
+                    <div className='bg-amber-300/80 p-7 w-80'>
+                        <h1 className='mb-15 text-3xl'>GREENWICH VILLAGE TOWNHOUSE</h1>
+                        <h2 className='mb-4 text-xl'>A classic pre-war renovated property in an exclusive neighborhood</h2>
+                        <div className='border-t-2 mb-4'></div>
+                        <div className='flex gap-5 text-2xl'>
+                            <h1>2 Bed</h1>
+                            <h1>2 Bath</h1>
+                            <h1>165 sqm</h1>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <img className='w-100 h-221 object-cover' src={House2} alt='house2' />
