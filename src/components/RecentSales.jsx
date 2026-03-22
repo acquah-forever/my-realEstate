@@ -15,13 +15,13 @@ const RecentSales = () => {
 
             <div className='flex'>
                 <div>
-                    <img className='w-98 h-auto object-cover' src={House1} alt='house1' />
+                    <img className='w-98 h-221 object-cover' src={House1} alt='house1' />
                 </div>
                 <div>
-                    <img className='w-100 h-auto object-cover' src={House2} alt='house2' />
+                    <img className='w-100 h-221 object-cover' src={House2} alt='house2' />
                 </div>
                 <div>
-                    <img className='w-md h-auto object-cover' src={House3} alt='house3' />
+                    <img className='w-md h-221 object-cover' src={House3} alt='house3' />
                 </div>
 
 

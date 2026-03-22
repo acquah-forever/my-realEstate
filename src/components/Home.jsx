@@ -9,7 +9,7 @@ import Interior from '../assets/buildings/interior.jpg'
 import Interior2 from '../assets/buildings/interior2.jpg'
 import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
-import MoreInfo from '../MoreInfo'
+import MoreInfo from './MoreInfo'
 import RecentSales from './RecentSales'
 
 const Home = () => {
@@ -46,7 +46,7 @@ const Home = () => {
       <div className='bg-amber-100 grid drid-cols-1 itemas-center'>
       <MoreInfo />
       </div>
-      <div>
+      <div className='bg-white min-h-screen'>
         <RecentSales />
       </div>
 
