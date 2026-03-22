@@ -5,11 +5,11 @@ import House3 from '../assets/buildings/house3.jpg'
 
 const RecentSales = () => {
     return (
-        <div>
-            <div>
-                <h1>Recent Sales</h1>
-                <div>
-                    <button>Get Free Consultation</button>
+        <div className='flex justify-between'>
+            <div className='p-7'>
+                <h1 className='text-3xl sm:text-4xl'>Recent Sales</h1>
+                <div className='mt-5 flex justify-center'>
+                    <button className='cursor-pointer text-white text-xl sm:text-2xl bg-amber-900 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</button>
                 </div>
             </div>
 
