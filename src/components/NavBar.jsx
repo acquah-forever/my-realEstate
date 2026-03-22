@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { House, X, Menu } from "lucide-react"
-import { motion, AnimatePresence, transform, easeInOut, easeIn, easeOut } from "motion/react"
+import { motion, AnimatePresence} from "motion/react"
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false)

@@ -19,7 +19,7 @@ const MoreInfo = () => {
                 <div className='bg-amber-400/50 p-5 sm:p-6 md:p-7 max-w-2xl w-full'>
                     <div className='mb-4 flex items-center justify-between'>
                         <h1 className='uppercase text-xl sm:text-2xl'>Vision & Strategy</h1>
-                        <House className='"w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
+                        <Goal className='"w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
                     </div>
                     <div className='border-t-2 mb-6'></div>
                     <h3 className='text-base sm:text-lg text-left leading-relaxed max-w-prose'>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
@@ -28,13 +28,15 @@ const MoreInfo = () => {
                 <div className='bg-amber-400/50 p-5 sm:p-6 md:p-7 max-w-2xl w-full'>
                     <div className='mb-4 flex items-center justify-between'>
                         <h1 className='uppercase text-xl sm:text-2xl'>Vision & Strategy</h1>
-                        <House className='"w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
+                        <Smile className='"w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
                     </div>
                     <div className='border-t-2 mb-6'></div>
                     <h3 className='text-base sm:text-lg text-left leading-relaxed max-w-prose'>We start with a focused conversation to understand your exact goals and craft a personalized, direct strategy to achieve them without delay.</h3>
                 </div>
             </div>
-            <button className='text-white text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</button>
+            <div className='mt-10 flex justify-center'>
+            <button className='cursor-pointer text-white text-xl sm:text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</button>
+            </div>
         </div>
     )
 }
