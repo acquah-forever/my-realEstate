@@ -8,8 +8,8 @@ const RecentSales = () => {
         <div className='flex flex-col lg:flex-row lg:justify-between px-5 lg:px-10'>
 
         
-            <div className='p-4 lg:w-1/3'>
-                <h1 className='text-3xl sm:text-4xl'>Recent Sales</h1>
+            <div className='p-4 lg:w-1/3 flex flex-col'>
+                <h1 className='text-3xl sm:text-4xl text-center lg:text-left'>Recent Sales</h1>
 
                 <div className='mt-5 flex justify-center lg:justify-start'>
                     <button className='cursor-pointer text-white text-lg sm:text-xl bg-amber-900 px-6 py-3 rounded-lg mt-5'>
