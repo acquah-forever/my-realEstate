@@ -55,7 +55,7 @@ const RecentSales = () => {
                         <div className='border-t-2 mb-4'></div>
                         <div className='flex gap-3 text-md'>
                             <h1>3 Bed</h1>
-                            <h1>2 Bath</h1>
+                            <h1>3 Bath</h1>
                             <h1>167 sqm</h1>
                         </div>
                     </div>
