@@ -46,7 +46,7 @@ const Home = () => {
       <div className='bg-amber-100 grid drid-cols-1 itemas-center'>
       <MoreInfo />
       </div>
-      <div className='bg-white'>
+      <div className='bg-white min-h-screen'>
         <RecentSales />
       </div>
 
