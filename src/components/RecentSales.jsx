@@ -7,7 +7,7 @@ const RecentSales = () => {
     return (
         <div className='flex flex-col lg:flex-row gap-10 px-5 lg:px-10'>
 
-            {/* LEFT SECTION */}
+        
             <div className='p-4 lg:w-1/3'>
                 <h1 className='text-3xl sm:text-4xl'>Recent Sales</h1>
 
@@ -18,12 +18,12 @@ const RecentSales = () => {
                 </div>
             </div>
 
-            {/* GRID SECTION */}
+        
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-2/3'>
 
-                {/* CARD 1 */}
+             
                 <div className='relative'>
-                    <img className='w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg' src={House1} alt='house1' />
+                    <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House1} alt='house1' />
 
                     <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>GREENWICH VILLAGE TOWNHOUSE</h1>
@@ -37,9 +37,9 @@ const RecentSales = () => {
                     </div>
                 </div>
 
-                {/* CARD 2 */}
+                
                 <div className='relative'>
-                    <img className='w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg' src={House2} alt='house2' />
+                    <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House2} alt='house2' />
 
                     <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>DOWNTOWN SKYLINE PENTHOUSE</h1>
@@ -53,9 +53,9 @@ const RecentSales = () => {
                     </div>
                 </div>
 
-                {/* CARD 3 */}
+             
                 <div className='relative'>
-                    <img className='w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg' src={House3} alt='house3' />
+                    <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House3} alt='house3' />
 
                     <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>MODERN CITY LOFT WITH TERRACE</h1>
