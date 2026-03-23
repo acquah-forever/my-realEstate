@@ -25,7 +25,7 @@ const RecentSales = () => {
                 <div className='relative'>
                     <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House1} alt='house1' />
 
-                    <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
+                    <div className='absolute top-5 left-5 right-5 bg-amber-300/60 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>GREENWICH VILLAGE TOWNHOUSE</h1>
                         <h2 className='mb-3 text-sm sm:text-base'>A pre-war renovated property in an exclusive neighborhood.</h2>
                         <div className='border-t-2 mb-3'></div>
@@ -41,7 +41,7 @@ const RecentSales = () => {
                 <div className='relative'>
                     <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House2} alt='house2' />
 
-                    <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
+                    <div className='absolute top-5 left-5 right-5 bg-amber-300/60 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>DOWNTOWN SKYLINE PENTHOUSE</h1>
                         <h2 className='mb-3 text-sm sm:text-base'>Luxurious living with breathtaking cityscapes from every room</h2>
                         <div className='border-t-2 mb-3'></div>
@@ -57,7 +57,7 @@ const RecentSales = () => {
                 <div className='relative'>
                     <img className='w-full h-64 sm:h-72 lg:h-140 object-cover rounded-lg' src={House3} alt='house3' />
 
-                    <div className='absolute top-5 left-5 right-5 bg-amber-300/90 p-4 rounded-md'>
+                    <div className='absolute top-5 left-5 right-5 bg-amber-300/60 p-4 rounded-md'>
                         <h1 className='mb-4 text-lg sm:text-xl'>MODERN CITY LOFT WITH TERRACE</h1>
                         <h2 className='mb-3 text-sm sm:text-base'>Elegant design and urban serenity with a private outdoor space.</h2>
                         <div className='border-t-2 mb-3'></div>
