@@ -11,7 +11,7 @@ import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
 import MoreInfo from './MoreInfo'
 import RecentSales from './RecentSales'
-import {Comments} from './ClientComments'
+import { Comments } from './ClientComments'
 import Reviews from './Reviews'
 
 const Home = () => {
@@ -51,11 +51,14 @@ const Home = () => {
       <div className='bg-white p-4'>
         <RecentSales />
       </div>
-      {Comments.map((<Reviews
-      key=""
-
-
-      />))}
+      {Comments.map((item) => (
+        <Reviews
+          key={item.id}
+          icon={item.icon}
+          comment={item.comment}
+          name={item.name}
+        />
+      ))}
 
     </div>
   )
