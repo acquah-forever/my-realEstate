@@ -4,7 +4,7 @@ export const Comments = [
     {
         id:1,
         icon: [<Star />, <Star />, <Star />, <Star />, <Star />],
-        comment: "Seraching felt endless until Kojo. They diddn't just find a house, they found us a home. Their dedication and expertise made the process seamless and enjoyable. We couldn't be happier with our new home, thanks to Kojo's exceptional service.",
+        comment: "Seraching felt endless until Kojo. They didn't just find a house, they found us a home. Their dedication and expertise made the process seamless and enjoyable. We couldn't be happier with our new home, thanks to Kojo's exceptional service.",
         name:"Sarah and David Lau"       
     },
     {  
