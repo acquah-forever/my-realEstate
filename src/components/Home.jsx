@@ -11,6 +11,7 @@ import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
 import MoreInfo from './MoreInfo'
 import RecentSales from './RecentSales'
+import Reviews from './Reviews'
 
 const Home = () => {
   return (
