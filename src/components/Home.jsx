@@ -51,7 +51,7 @@ const Home = () => {
       <div className='bg-white p-4'>
         <RecentSales />
       </div>
-      <div className='bg-amber-100 p-8 space-y-10 flex flex-col justify-center items-center md:flex-row md:justify-items-center md:items-center'>
+      <div className='bg-amber-100 p-8 space-y-10 flex flex-col justify-center items-center lg:flex-row lg:gap-10 lg:justify-items-center lg:items-center'>
         {Comments.map((item) => (
           <Reviews
             key={item.id}
