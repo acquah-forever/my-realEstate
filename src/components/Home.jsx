@@ -13,6 +13,7 @@ import MoreInfo from './MoreInfo'
 import RecentSales from './RecentSales'
 import { Comments } from './ClientComments'
 import Reviews from './Reviews'
+import Form from './Form'
 
 const Home = () => {
   return (
@@ -60,7 +61,9 @@ const Home = () => {
             name={item.name}
           />
         ))}
-
+      </div>
+      <div>
+        <Form />
       </div>
 
     </div>
