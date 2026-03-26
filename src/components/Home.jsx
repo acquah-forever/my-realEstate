@@ -62,7 +62,7 @@ const Home = () => {
           />
         ))}
       </div>
-      <div className='min-h-screen'>
+      <div className='min-h-screen p-10'>
         <Form />
       </div>
 
