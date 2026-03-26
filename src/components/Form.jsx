@@ -5,7 +5,7 @@ const Form = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
 
-    function onSubmit(data){
+    function onSubmit(data) {
         alert(`Credentials:${data.firstname},${data.lastname},${data.phone},${data.email}${data.services}...submitted`)
     }
 
@@ -19,36 +19,44 @@ const Form = () => {
                 </div>
                 <label className='p-3'>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
-                        <h1>First name*</h1>
-                        <input className='outline-none p-2 bg-sky-200' type="text"{...register('firstname',{required:'enter your firstname'})} />
-                        {errors.firstname && <p>{errors.firstname.message}</p>}
+                        <div className='flex flex-col space-y-3'>
+                            <div className='flex items-center space-x-3'>
+                                <h1>First name*</h1>
+                                <input className='outline-none p-2 bg-sky-200' type="text"{...register('firstname', { required: 'Enter your firstname' })} />
+                            </div>
+                            <div>
+                                {errors.firstname && <p className='text-red-500'>{errors.firstname.message}</p>}
+                            </div>
+                        </div>
+
+
                         <h1>Last name*</h1>
-                        <input className='outline-none p-2 bg-sky-200' type="text"{...register('lastname',{required:'enter your lastname'})} />
+                        <input className='outline-none p-2 bg-sky-200' type="text"{...register('lastname', { required: 'enter your lastname' })} />
                         {errors.lastname && <p>{errors.lastname.message}</p>}
                     </div>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
                         <h1>Phone number*</h1>
-                        <input className='outline-none p-2 bg-sky-200' type="number"{...register('phone',{required:'enter valid phone number'})} />
+                        <input className='outline-none p-2 bg-sky-200' type="number"{...register('phone', { required: 'enter valid phone number' })} />
                         {errors.phone && <p>{errors.phone.message}</p>}
                         <h1>Email*</h1>
-                        <input className='outline-none p-2 bg-sky-200' type="email" {...register('email',{required:'enter valid email address'})}/>
+                        <input className='outline-none p-2 bg-sky-200' type="email" {...register('email', { required: 'enter valid email address' })} />
                         {errors.email && <p>{errors.email.message}</p>}
                     </div>
-                    <select className='w-full bg-sky-300 p-2 mb-20' name='service'{...register('service',{required:'select service'})}>
+                    <select className='w-full bg-sky-300 p-2 mb-20' name='service'{...register('service', { required: 'select service' })}>
                         <option value="">Select A Service</option>
                         <option value="Selling">Selling</option>
                         <option value="Buying">Buying</option>
                         <option value="Investing">Investing</option>
                         <option value="Leasing">Leasing</option>
                     </select>
-                    {errors.service && <p>{errors.services.message}</p>}
+                    {errors.service && <p>{errors.service.message}</p>}
                     <div className='mb-15'>
                         <h1 className='mb-12'>Message</h1>
-                        <input className='border-b outline-none w-full' type="text"{...register('message',{required:'enter message'})} />
+                        <input className='border-b outline-none w-full' type="text"{...register('message', { required: 'enter message' })} />
                         {errors.message && <p>{errors.message.message}</p>}
                     </div>
                     <div className='flex justify-center'>
-                        <button className='bg-pink-400 text-xl px-20 py-4 rounded-lg cursor-pointer'type='submit'>Schedule a Call</button>
+                        <button className='bg-pink-400 text-xl px-20 py-4 rounded-lg cursor-pointer' type='submit'>Schedule a Call</button>
                     </div>
                 </label>
             </form>s
