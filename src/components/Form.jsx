@@ -1,7 +1,7 @@
 import React, { useForm } from 'react'
 
 const Form = () => {
-    // const { register, handleSubmit, formState: { errors } } = useForm()
+    const { register, handleSubmit, formState: { errors } } = useForm()
 
     return (
         <div className='p-15 flex justify-center'>
@@ -13,10 +13,10 @@ const Form = () => {
                 </div>
                 <label className='p-3'>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
-                        <h1>Name*</h1>
+                        <h1>Firstname*</h1>
                         <input className='outline-none' type="text" />
                         <h1>Last name*</h1>
-                        <input className='outline-none' type="text" />
+                        <input className='outline-none' type="text"{...register('firstname')} />
                     </div>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
                         <h1>Phone number*</h1>
