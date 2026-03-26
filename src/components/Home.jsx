@@ -14,6 +14,7 @@ import RecentSales from './RecentSales'
 import { Comments } from './ClientComments'
 import Reviews from './Reviews'
 import Form from './Form'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -64,6 +65,9 @@ const Home = () => {
       </div>
       <div className='min-h-screen p-10'>
         <Form />
+      </div>
+      <div>
+        <Footer />
       </div>
 
     </div>
