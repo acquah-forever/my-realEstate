@@ -3,9 +3,13 @@ import React, { useForm } from 'react'
 const Form = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
 
+    function handleSubmit(data){
+        alert(`Credentials:${firstname},${lastname},${phone},${email},${services}...submitted`)
+    }
+
     return (
         <div className='p-15 flex justify-center'>
-            <form className='p-10 bg-slate-100'>
+            <form className='p-10 bg-slate-100'onSubmit={handleSubmit(onSubmit)}>
                 <div className='flex flex-col mb-10'>
                     <h1 className='mb-7 text-center text-3xl font-semibold'>Ready to stop Searching and <br /> Start Living?</h1>
                     <p className='text-center tracking-tight'>Reach out today for a focused discussion on your real estate goals.</p>
@@ -13,14 +17,14 @@ const Form = () => {
                 </div>
                 <label className='p-3'>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
-                        <h1>Firstname*</h1>
-                        <input className='outline-none' type="text" />
+                        <h1>First name*</h1>
+                        <input className='outline-none' type="text"{...required(firstname,{required:'enter your firstname'})} />
                         <h1>Last name*</h1>
-                        <input className='outline-none' type="text"{...register('firstname')} />
+                        <input className='outline-none' type="text"{...register('lastname',{required:'enter your lastname'})} />
                     </div>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
                         <h1>Phone number*</h1>
-                        <input className='outline-none' type="number" />
+                        <input className='outline-none' type="number"{...reequired('phone',{required:'enter valid phone number'})} />
                         <h1>Email*</h1>
                         <input className='outline-none' type="email" />
                     </div>
@@ -37,7 +41,7 @@ const Form = () => {
                         <input className='border-b outline-none w-full' type="text" />
                     </div>
                     <div className='flex justify-center'>
-                        <button className='bg-pink-400 px-20 py-4 rounded-lg cursor-pointer'>Schedule a Call</button>
+                        <button className='bg-pink-400 px-20 py-4 rounded-lg cursor-pointer'type='submit'>Schedule a Call</button>
                     </div>
                 </label>
             </form>s
