@@ -4,7 +4,7 @@ const Form = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
 
     function handleSubmit(data){
-        alert(`Credentials:${firstname},${lastname},${phone},${email},${services}...submitted`)
+        alert(`Credentials:${firstname},${lastname},${phone},${email}${services}...submitted`)
     }
 
     return (
@@ -18,15 +18,19 @@ const Form = () => {
                 <label className='p-3'>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
                         <h1>First name*</h1>
-                        <input className='outline-none' type="text"{...required(firstname,{required:'enter your firstname'})} />
+                        <input className='outline-none' type="text"{...register(firstname,{required:'enter your firstname'})} />
+                        {errors.firstname && <p>{errors.firstname.message}</p>}
                         <h1>Last name*</h1>
                         <input className='outline-none' type="text"{...register('lastname',{required:'enter your lastname'})} />
+                        {errors.lastname && <p>{errors.lastname.message}</p>}
                     </div>
                     <div className='flex space-x-15 justify-between items-center mb-17'>
                         <h1>Phone number*</h1>
-                        <input className='outline-none' type="number"{...reequired('phone',{required:'enter valid phone number'})} />
+                        <input className='outline-none' type="number"{...register('phone',{required:'enter valid phone number'})} />
+                        {errors.phone && <p>{errors.phone.message}</p>}
                         <h1>Email*</h1>
-                        <input className='outline-none' type="email" />
+                        <input className='outline-none' type="email" {...register('email',{required:'enter valid email address'})}/>
+                        {errors.email && <p>{errors.email.message}</p>}
                     </div>
                     <h1 className='mb-7'>Services*</h1>
                     <select className='w-full mb-20' name='service'>
