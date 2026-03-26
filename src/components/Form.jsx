@@ -1,10 +1,11 @@
 import React, { useForm } from 'react'
 
 const Form = () => {
+    
     const { register, handleSubmit, formState: { errors } } = useForm()
 
-    function handleSubmit(data){
-        alert(`Credentials:${firstname},${lastname},${phone},${email}${services}...submitted`)
+    function onSubmit(data){
+        alert(`Credentials:${data.firstname},${data.lastname},${data.phone},${data.email}${data.services}...submitted`)
     }
 
     return (
@@ -42,7 +43,8 @@ const Form = () => {
                     </select>
                     <div className='mb-15'>
                         <h1 className='mb-12'>Message</h1>
-                        <input className='border-b outline-none w-full' type="text" />
+                        <input className='border-b outline-none w-full' type="text"{...register('message',{required:'enter message'})} />
+                        {errors.message && <p>{errors.message.message}</p>}
                     </div>
                     <div className='flex justify-center'>
                         <button className='bg-pink-400 px-20 py-4 rounded-lg cursor-pointer'type='submit'>Schedule a Call</button>
