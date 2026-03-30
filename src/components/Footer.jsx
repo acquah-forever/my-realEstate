@@ -3,10 +3,10 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className="mt-16">
-            <footer className="footer bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-slate-300 p-6 sm:p-8 md:p-10 lg:p-12">
+            <footer className="footer bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 text-slate-300 p-6 sm:p-8 md:p-10 lg:p-12">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-                        {/* Brand/Logo Section */}
+
                         <div className="col-span-1 sm:col-span-2 lg:col-span-1">
                             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Kojo Addo</h2>
                             <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
@@ -14,7 +14,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        {/* Services Section */}
+
                         <nav className="flex flex-col">
                             <h6 className="footer-title text-lg sm:text-xl font-semibold text-white mb-4">Services</h6>
                             <a className="link link-hover text-sm sm:text-base hover:text-amber-400 transition-colors duration-300 mb-2">Selling</a>
@@ -23,7 +23,7 @@ const Footer = () => {
                             <a className="link link-hover text-sm sm:text-base hover:text-amber-400 transition-colors duration-300 mb-2">Leasing</a>
                         </nav>
 
-                        {/* Company Section */}
+
                         <nav className="flex flex-col">
                             <h6 className="footer-title text-lg sm:text-xl font-semibold text-white mb-4">Company</h6>
                             <a className="link link-hover text-sm sm:text-base hover:text-amber-400 transition-colors duration-300 mb-2">About us</a>
@@ -31,7 +31,7 @@ const Footer = () => {
                           
                         </nav>
 
-                        {/* Social Section */}
+                        
                         <nav className="flex flex-col">
                             <h6 className="footer-title text-lg sm:text-xl font-semibold text-white mb-4">Follow Us</h6>
                             <div className="grid grid-flow-col gap-4">
@@ -72,7 +72,6 @@ const Footer = () => {
                         </nav>
                     </div>
 
-                    {/* Copyright Section */}
                     <div className="border-t border-slate-700 mt-8 pt-6 text-center">
                         <p className="text-sm sm:text-base text-slate-400">
                             © 2026 Kojo Addo. All rights reserved. |

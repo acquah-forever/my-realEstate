@@ -70,8 +70,8 @@ const Form = () => {
                         <option value=""></option>
                         <option value="Selling">Selling</option>
                         <option value="Buying">Buying</option>
-                        <option value="Investing">Investing</option>
-                        <option value="Leasing">Leasing</option>
+                        <option value="Investing">Leasing</option>
+                        <option value="Leasing">Investing</option>
                     </select>
                     {errors.service && <p className='text-red-500 text-sm'>{errors.service.message}</p>}
 
@@ -81,7 +81,7 @@ const Form = () => {
                         {errors.message && <p className='text-red-500 text-sm'>{errors.message.message}</p>}
                     </div>
                     <div className='flex justify-center'>
-                        <button className='bg-pink-400 text-lg md:text-xl px-8 md:px-20 py-3 md:py-4 rounded-lg cursor-pointer w-full md:w-auto' type='submit'>Schedule a Call</button>
+                        <button className='bg-pink-400 text-lg md:text-xl px-8 md:px-20 py-3 md:py-4 rounded-lg cursor-pointer w-full md:w-auto' type='submit'>Schedule Meeting</button>
                     </div>
 
                 </label>
