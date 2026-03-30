@@ -23,7 +23,7 @@ const Form = () => {
                         <div className='flex flex-col space-y-3 w-full md:w-auto mb-4 md:mb-0'>
                             <div className='flex flex-col md:flex-row md:items-center md:space-x-3'>
                                 <h1 className='text-sm md:text-base'>First name*</h1>
-                                <input className='outline-none p-2 bg-sky-200 w-full md:w-auto' type="text"{...register('firstname', { required: 'Enter your firstname' })} />
+                                <input className='outline-none p-2  w-full md:w-auto' type="text"{...register('firstname', { required: 'Enter your firstname' })} />
                             </div>
                             <div>
                                 {errors.firstname && <p className='text-red-500 text-sm'>{errors.firstname.message}</p>}
@@ -33,7 +33,7 @@ const Form = () => {
                         <div className='flex flex-col space-y-3 w-full md:w-auto'>
                             <div className='flex flex-col md:flex-row md:items-center md:space-x-3'>
                                 <h1 className='text-sm md:text-base'>Last name*</h1>
-                                <input className='outline-none p-2 bg-sky-200 w-full md:w-auto' type="text"{...register('lastname', { required: 'Enter your lastname' })} />
+                                <input className='outline-none p-2  w-full md:w-auto' type="text"{...register('lastname', { required: 'Enter your lastname' })} />
                             </div>
                             <div>
                                 {errors.lastname && <p className='text-red-500 text-sm'>{errors.lastname.message}</p>}
@@ -46,7 +46,7 @@ const Form = () => {
                         <div className='flex flex-col space-y-3 w-full md:w-auto mb-4 md:mb-0'>
                             <div className='flex flex-col md:flex-row md:items-center md:space-x-3'>
                                 <h1 className='text-sm md:text-base'>Phone number*</h1>
-                                <input className='outline-none p-2 bg-sky-200 w-full md:w-auto' type="number"{...register('phone', { required: 'Enter phone number' })} />
+                                <input className='outline-none p-2  w-full md:w-auto' type="number"{...register('phone', { required: 'Enter phone number' })} />
                             </div>
                             <div>
                                 {errors.phone && <p className='text-red-500 text-sm'>{errors.phone.message}</p>}
@@ -56,7 +56,7 @@ const Form = () => {
                         <div className='flex flex-col space-y-3 w-full md:w-auto'>
                             <div className='flex flex-col md:flex-row md:items-center md:space-x-3'>
                                 <h1 className='text-sm md:text-base'>Email*</h1>
-                                <input className='outline-none p-2 bg-sky-200 w-full md:w-auto' type="email" {...register('email', { required: 'Enter email address' })} />
+                                <input className='outline-none p-2 w-full md:w-auto' type="email" {...register('email', { required: 'Enter email address' })} />
                             </div>
                             <div>
                                 {errors.email && <p className='text-red-500 text-sm'>{errors.email.message}</p>}
@@ -66,12 +66,12 @@ const Form = () => {
                     </div>
 
                     <h1 className='text-sm md:text-base mb-4'>Select a Service</h1>
-                    <select className='w-full bg-sky-300 p-2 mb-10 md:mb-20' name='service'{...register('service', { required: 'Select service' })}>
+                    <select className='w-full p-2 mb-10 md:mb-20' name='service'{...register('service', { required: 'Select service' })}>
                         <option value=""></option>
                         <option value="Selling">Selling</option>
                         <option value="Buying">Buying</option>
-                        <option value="Investing">Investing</option>
-                        <option value="Leasing">Leasing</option>
+                        <option value="Investing">Leasing</option>
+                        <option value="Leasing">Investing</option>
                     </select>
                     {errors.service && <p className='text-red-500 text-sm'>{errors.service.message}</p>}
 
@@ -81,7 +81,7 @@ const Form = () => {
                         {errors.message && <p className='text-red-500 text-sm'>{errors.message.message}</p>}
                     </div>
                     <div className='flex justify-center'>
-                        <button className='bg-pink-400 text-lg md:text-xl px-8 md:px-20 py-3 md:py-4 rounded-lg cursor-pointer w-full md:w-auto' type='submit'>Schedule a Call</button>
+                        <button className='bg-pink-400 text-lg md:text-xl px-8 md:px-20 py-3 md:py-4 rounded-lg cursor-pointer w-full md:w-auto' type='submit'>Schedule Meeting</button>
                     </div>
 
                 </label>
