@@ -70,8 +70,8 @@ const Form = () => {
                         <option value=""></option>
                         <option value="Selling">Selling</option>
                         <option value="Buying">Buying</option>
-                        <option value="Investing">Leasing</option>
-                        <option value="Leasing">Investing</option>
+                        <option value="Investing">Investing</option>
+                        <option value="Leasing">Leasing</option>
                     </select>
                     {errors.service && <p className='text-red-500 text-sm'>{errors.service.message}</p>}
 

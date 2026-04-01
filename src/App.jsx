@@ -1,6 +1,8 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import LogIn from './components/LogIn'
+import SignUp from './components/SignUp'
 import { Routes,Route } from "react-router-dom"
 import Res from './assets/buildings/hero.jpg'
 
@@ -11,6 +13,8 @@ const App = () => {
       <NavBar className='relative z-20' />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/logIn' element={<LogIn />} />
+        <Route path='/signUp' element={<SignUp />} />
       </Routes>
     </div>
   )
