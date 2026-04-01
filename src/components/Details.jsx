@@ -2,7 +2,7 @@ import React from 'react'
 
 const Details = () => {
     return (
-        <div className='p-10 grid md:flex md:gap-20'>
+        <div className='p-10 grid md:flex md:gap-20' id='details'>
             <div className='mt-15'>
                 <h1 className='text-xl md:text-2xl'>Exclusive Guidaance for</h1>
                 <h1 className='mt-10 text-3xl font-semibold'>Buyers, Sellers & Investors</h1>
