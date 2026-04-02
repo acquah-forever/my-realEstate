@@ -1,7 +1,7 @@
 const properties = [
   {
     id: 1,
-    title: "Modern 4-Bedroom Family Home",
+    title: "Modern 4-Bedroom Home",
     price: "£350000",
     location: "Manchester",
     description: "Spacious modern home in a quiet residential area, ideal for families.",
@@ -15,7 +15,7 @@ const properties = [
       "Double Glazing",
       "Driveway"
     ],
-    images: "https://example.com/images/house1-1.jpg",
+    images: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     listedDate: "2026-03-20",
     agent: {
       name: "James Walker",
@@ -26,7 +26,7 @@ const properties = [
 
   {
     id: 2,
-    title: "Luxury 5-Bedroom Villa with Pool",
+    title: "Luxury 5-Bedroom with Pool",
     price: "£950000",
     location: "London",
     description: "Premium luxury villa located in one of London's most prestigious neighborhoods.",
@@ -40,7 +40,7 @@ const properties = [
       "Underfloor Heating",
       "Security System"
     ],
-    images: "https://example.com/images/house2-1.jpg",
+    images: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlsbGF8ZW58MHwwfDB8fHwy",
     listedDate: "2026-03-18",
     agent: {
       name: "Charlotte Evans",
@@ -51,7 +51,7 @@ const properties = [
 
   {
     id: 3,
-    title: "Affordable 3-Bedroom Starter Home",
+    title: "Affordable 3-Bedroom Home",
     price: "£220000",
     location: "Birmingham",
     description: "Well-priced home perfect for first-time buyers or small families.",
@@ -63,7 +63,7 @@ const properties = [
       "Fitted Kitchen",
       "Rear Garden"
     ],
-    images: "https://example.com/images/house3-1.jpg",
+    images: "https://images.unsplash.com/photo-1696237461860-630be53f179c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
     listedDate: "2026-03-15",
     agent: {
       name: "Oliver Smith",
@@ -76,7 +76,7 @@ const properties = [
     id: 4,
     title: "Executive 2-Bedroom Apartment",
     price: "£300000",
-    location: "London",
+    location: "Coventry",
     description: "Contemporary apartment in a prime riverside development.",
     bedrooms: 2,
     bathrooms: 2,
@@ -87,7 +87,7 @@ const properties = [
       "Gym Access",
       "Balcony"
     ],
-    images: "https://example.com/images/house4-1.jpg",
+    images: "https://images.unsplash.com/photo-1717167398817-121e3c283dbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
     listedDate: "2026-03-10",
     agent: {
       name: "Emily Brown",
@@ -112,12 +112,37 @@ const properties = [
       "Wine Cellar",
       "Landscaped Garden"
     ],
-    images: "https://example.com/images/house5-1.jpg",
+    images: "https://images.unsplash.com/photo-1626249893774-dc11ed24adbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
     listedDate: "2026-03-05",
     agent: {
       name: "Henry Clarke",
       phone: "+44 7700 900005",
       email: "henry.clarke@estateuk.com"
+    }
+  },
+
+    {
+    id: 6,
+    title: "Cozy 5-Bedroom Mansion",
+    price: "£1500000",
+    location: "Bristol",
+    description: "Stunning seafront mansion with uninterrupted coastal views.",
+    bedrooms: 6,
+    bathrooms: 7,
+    area: "7211 sqft",
+    features: [
+      "harbour View",
+      "Private Beach Access",
+      "Home Cinema",
+      "Wine Cellar",
+      "Landscaped Garden"
+    ],
+    images: "https://images.unsplash.com/photo-1614846384571-1e31322ed3a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
+    listedDate: "2026-03-05",
+    agent: {
+      name: "Rom Baro",
+      phone: "+44 7700 9345605",
+      email: "rom.baroe@estateuk.com"
     }
   }
 ];

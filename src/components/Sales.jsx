@@ -9,11 +9,11 @@ const Sales = ({property}) => {
             <img className="w-full h-48 object-cover" src={property.images} alt={property.title} />
         </div>
         <div className="p-4">
-            <h1 className="text-xl font-semibold mb-1">{property.title}</h1>
+            <h1 className="text-xl sm:text-2xl font-semibold mb-5">{property.title}</h1>
             <p className="text-xl font-semibold mb-1">{property.location}</p>
         </div>
-        <div>
-            <p className="text-lg font-bold text-green-600 mb-3">{property.price}</p>
+        <div className='p-4'>
+            <p className="text-xl font-bold text-green-600 mb-3">{property.price}</p>
         </div>
       
     </div>
