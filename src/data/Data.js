@@ -1,4 +1,4 @@
-const Properties = [
+const properties = [
   {
     id: 1,
     title: "Modern 4-Bedroom Family Home",
@@ -122,4 +122,6 @@ const Properties = [
   }
 ];
 
-export default Properties;
+export function getProperties(){
+    return properties
+}
