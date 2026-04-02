@@ -54,7 +54,7 @@ const Home = () => {
       <div className='bg-amber-100 grid drid-cols-1 itemas-center'>
         <MoreInfo />
       </div>
-      <div className='p-6 grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6 px-10 py-10">
         {properties.map((property) => (
           <Sales property = {property} key = {property.id}/>
         ))}
