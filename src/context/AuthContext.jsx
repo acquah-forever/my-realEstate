@@ -3,7 +3,8 @@ import React, { createContext, useState } from 'react'
 export const Auth = createContext(null)
 
 export default function AuthDetails({ children }) {
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState(localStorage.getItem('currentUserEmail') ?
+    {email:localStorage.getItem('currentUserEmail')} : null)
 
     function signUp(email, password) {
         const users = JSON.parse(localStorage.getItem('users') || '[]')
