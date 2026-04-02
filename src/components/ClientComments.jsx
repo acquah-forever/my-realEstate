@@ -20,7 +20,7 @@ export const Comments = [
         name: "James and Liza Rodriguez"
     },
     {
-        id: 3,
+        id: 4,
         icon: [<Star />, <Star />, <Star />, <Star />, <Star />],
         comment: "Kojo's dedication and expertise made our home buying experience exceptional. They went above and beyond to find us the perfect home, and their support throughout the process was invaluable. We are thrilled with our new home and grateful for Kojo's outstanding service.",
         name: "James and Liza Rodriguez"

@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
+import { Auth } from '../context/AuthContext'
 
 const SignUp = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
+  const { signUp } = useContext(Auth)
+  const [error, setError] = useState('')
   const navigate = useNavigate()
 
-  function onSubmit() {
-    navigate('/')
+  function onSubmit(data) {
+    setError(null)
+
+    let result;
+    result = signUp(data.email, data.password)
+
+    if (result.success) {
+      navigate('/')
+    } else {
+      setError(result.error)
+    }
+
   }
-  function handleClick(){
+  function handleClick() {
     navigate('/logIn')
   }
 
@@ -45,9 +58,12 @@ const SignUp = () => {
             <button className='bg-sky-500 text-white text-xl px-6 py-4 rounded cursor-pointer' type='submit'>Sign Up</button>
           </div>
 
+          <div className='flex justify-center  py-3'>
+            {error && <p className='text-red-600 text-lg'>{error}</p>}
+          </div>
 
           <div className='flex justify-center'>
-            <p className='text-lg'>Already Have an Account? &nbsp; <span className='cursor-pointer text-xl text-sky-600  border-b'onClick={handleClick}>Log In</span></p>
+            <p className='text-md sm:text-lg'>Already Have an Account? &nbsp; <span className='cursor-pointer text-lg sm:text-xl text-sky-600  border-b' onClick={handleClick}>Log In</span></p>
           </div>
         </form>
 

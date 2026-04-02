@@ -5,11 +5,21 @@ import { Auth } from '../context/AuthContext'
 
 const LogIn = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
-    const{user,signUp} = useContext(Auth)
+    const{signIn} = useContext(Auth)
+    const[error,setError] = useState('')
     const navigate = useNavigate()
 
-    function onSubmit() {
-        navigate('/')
+    function onSubmit(data) {
+        setError(null)
+        let result;
+        result = signIn (data.email, data.password)
+
+        if(result.success){
+            navigate('/')
+        } else{
+            setError(result.error)
+        }
+        
     }
     function handleClick(){
         navigate('/signUp')
@@ -47,8 +57,12 @@ const LogIn = () => {
                         <button className='bg-sky-500 text-white text-xl px-6 py-4 rounded cursor-pointer' type='submit'>Log In</button>
                     </div>
 
+                    <div className='flex justify-center py-3'>
+                        {error && <p className='text-red-600 text-lg'>{error}</p>}
+                    </div>
+
                     <div className='flex justify-center'>
-                        <p className='text-lg'>New Here? &nbsp; <span className='cursor-pointer text-xl text-sky-600  border-b'onClick={handleClick}>Sign Up</span></p>
+                        <p className='text-md sm:text-lg'>New Here? &nbsp; <span className='cursor-pointer  text-lg sm:text-xl text-sky-600  border-b'onClick={handleClick}>Sign Up</span></p>
                     </div>
                 </form>
 
