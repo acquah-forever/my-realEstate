@@ -6,6 +6,7 @@ import SignUp from './components/SignUp'
 import { Routes, Route } from "react-router-dom"
 import Res from './assets/buildings/hero.jpg'
 import AuthDetails from './context/AuthContext'
+import PropertyDetails from './components/PropertyDetails'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/logIn' element={<LogIn />} />
           <Route path='/signUp' element={<SignUp />} />
+          <Route path='/property/:id' element={<PropertyDetails />} />
         </Routes>
       </div>
     </AuthDetails>
