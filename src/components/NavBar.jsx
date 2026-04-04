@@ -1,4 +1,4 @@
-import React, { useState, useContext} from 'react'
+import React, { useState, useContext } from 'react'
 import { House, X, Menu } from "lucide-react"
 import { motion, AnimatePresence } from "motion/react"
 import { NavLink } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { Auth } from '../context/AuthContext'
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false)
-  const { user, logOut} = useContext(Auth)
+  const { user, logOut } = useContext(Auth)
 
 
   function toggleMenu() {
@@ -42,7 +42,6 @@ const NavBar = () => {
             :
             <h1 className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>Hello {user.email} &nbsp; <button className='bg-gray-500 p-2 rounded' onClick={logOut}>LogOut</button></h1>
           }
-  
           <div className='flex items-center'>
             <button className='cursor-pointer text-white flex sm:hidden transition-transform ease-in-out duration-200' onClick={toggleMenu}>{menu ? <X /> : <Menu />}</button>
           </div>
@@ -55,12 +54,21 @@ const NavBar = () => {
       <div>
         <AnimatePresence>
           {menu && (
-            <div className='text-white rounded-xl flex  justify-center items-center'>
-              <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-2xl flex justify-center space-x-5 sm:hidden'>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}><li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/'>Home</NavLink></li></motion.li>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}><li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/logIn'>Log In</NavLink></li></motion.li>
-                <motion.li variants={children} onClick={() => setMenu(!menu)}><li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/signUp'>Sign Up</NavLink></li></motion.li>
-              </motion.ul>
+            <div className='text-white rounded-xl flex justify-center items-center'>
+
+              {!user ? (
+                <div>
+                  <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-2xl flex justify-center space-x-5 sm:hidden'>
+                    <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/'>Home</NavLink></motion.li>
+                    <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/logIn'>Log In</NavLink></motion.li>
+                    <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/signUp'>Sign Up</NavLink></motion.li>
+                  </motion.ul>
+                </div>
+              ) : (
+                <motion.ul variants={children}>
+                  <motion.li><button className='bg-gray-500 p-2 rounded' onClick={() => { logOut(); setMenu(false) }}>LogOut</button></motion.li>
+                </motion.ul>
+              )}
             </div>
           )}
         </AnimatePresence>

@@ -2,7 +2,7 @@ const properties = [
   {
     id: 1,
     title: "Modern 4-Bedroom Home",
-    price: "£350000",
+    price: "£350,000",
     location: "Manchester",
     description: "Spacious modern home in a quiet residential area, ideal for families.",
     bedrooms: 4,
@@ -26,8 +26,8 @@ const properties = [
 
   {
     id: 2,
-    title: "Luxury 5-Bedroom with Pool",
-    price: "£950000",
+    title: "Luxury 2-Bedroom with Pool",
+    price: "£80,000",
     location: "London",
     description: "Premium luxury villa located in one of London's most prestigious neighborhoods.",
     bedrooms: 5,
@@ -52,7 +52,7 @@ const properties = [
   {
     id: 3,
     title: "Affordable 3-Bedroom Home",
-    price: "£220000",
+    price: "£200,000",
     location: "Birmingham",
     description: "Well-priced home perfect for first-time buyers or small families.",
     bedrooms: 3,
@@ -75,7 +75,7 @@ const properties = [
   {
     id: 4,
     title: "Executive 2-Bedroom Apartment",
-    price: "£300000",
+    price: "£300,000",
     location: "Coventry",
     description: "Contemporary apartment in a prime riverside development.",
     bedrooms: 2,
@@ -99,7 +99,7 @@ const properties = [
   {
     id: 5,
     title: "Beachfront 6-Bedroom Mansion",
-    price: "£1800000",
+    price: "£1,800,000",
     location: "Brighton",
     description: "Stunning seafront mansion with uninterrupted coastal views.",
     bedrooms: 6,
@@ -127,7 +127,7 @@ const properties = [
     price: "£1500000",
     location: "Bristol",
     description: "Stunning seafront mansion with uninterrupted coastal views.",
-    bedrooms: 6,
+    bedrooms: 5,
     bathrooms: 7,
     area: "7211 sqft",
     features: [
@@ -149,4 +149,8 @@ const properties = [
 
 export function getProperties(){
     return properties
+}
+
+export function getPropertiesById(){
+  return properties.find((p) => p.id === Number(id))
 }
