@@ -10,12 +10,11 @@ import Interior2 from '../assets/buildings/interior2.jpg'
 import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
 import MoreInfo from './MoreInfo'
-import { getProperties } from '../data/Data'
+import { getProperties } from '../data/data'
 import Sales from './Sales'
 import { Comments } from './ClientComments'
 import Reviews from './Reviews'
 import Form from './Form'
-import Footer from './Footer'
 
 const Home = () => {
 
@@ -73,9 +72,7 @@ const Home = () => {
       <div className='min-h-screen p-10'>
         <Form />
       </div>
-      <div>
-        <Footer />
-      </div>
+
 
     </div>
   )

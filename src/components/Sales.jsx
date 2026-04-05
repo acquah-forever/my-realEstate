@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Sales = ({ property }) => {
@@ -15,12 +16,9 @@ const Sales = ({ property }) => {
                 </div>
                 <div className='flex justify-between items-center'>
                     <p className="text-2xl font-bold text-green-600 mt-3">{property.price}</p>
-                    <button className="btn btn-primary w-30">View</button>
+                    <Link to={`property/${property.id}`} className="btn btn-primary w-30">View</Link>
                 </div>
             </div>
-
-
-
         </div>
     )
 }

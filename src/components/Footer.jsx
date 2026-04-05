@@ -2,46 +2,26 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="mt-16 bg-slate-950 text-slate-200">
+        <footer className=" bg-slate-950 text-slate-200">
             <div className="relative overflow-hidden px-6 py-12 sm:px-8 lg:px-12">
                 <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(248,180,0,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.14),transparent_20%)]" />
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <div className="grid gap-10 lg:grid-cols-4 lg:gap-12">
                         <div className="space-y-5">
-                            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-                                Kojo Addo
-                            </h2>
-                            <p className="max-w-md text-sm sm:text-base text-slate-300 leading-relaxed">
-                                Helping you find the right home, investment, or commercial space with confidence, clarity, and care.
-                            </p>
-                            <div className="inline-flex rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-sm shadow-amber-500/20 transition hover:bg-amber-300">
-                                Let's make your next move memorable
-                            </div>
+                            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Kojo Addo</h2>
+                            <p className="max-w-md text-sm sm:text-base text-slate-300 leading-relaxed">Helping you find the right home, investment, or commercial space with confidence, clarity, and care.  </p>
+                           
+                            <div className="inline-flex rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-sm shadow-amber-500/20 transition hover:bg-amber-300">Let's make your next move memorable </div>
                         </div>
 
                         <div>
                             <h3 className="text-lg font-semibold text-white mb-5">Explore</h3>
                             <ul className="space-y-3 text-sm sm:text-base text-slate-300">
-                                <li>
-                                    <a href="#services" className="transition-colors duration-300 hover:text-amber-400">
-                                        Selling your property
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#listings" className="transition-colors duration-300 hover:text-amber-400">
-                                        Browse listings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#reviews" className="transition-colors duration-300 hover:text-amber-400">
-                                        Client success stories
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#contact" className="transition-colors duration-300 hover:text-amber-400">
-                                        Book a consultation
-                                    </a>
-                                </li>
+                                <li> <a href="#services" className="transition-colors duration-300 hover:text-amber-400">Selling your property</a></li>
+                                <li><a href="#listings" className="transition-colors duration-300 hover:text-amber-400"> Browse listings</a></li>
+                                <li><a href="#reviews" className="transition-colors duration-300 hover:text-amber-400">Client success stories</a></li>
+                                <li><a href="#contact" className="transition-colors duration-300 hover:text-amber-400">Book a consultation</a></li>
+                                
                             </ul>
                         </div>
 
