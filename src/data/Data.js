@@ -8,13 +8,7 @@ const properties = [
     bedrooms: 4,
     bathrooms: 3,
     area: "3014 sqft",
-    features: [
-      "Central Heating",
-      "Garage",
-      "Garden",
-      "Double Glazing",
-      "Driveway"
-    ],
+    features: ["Central Heating","Garage","Garden","Double Glazing","Driveway"],
     images: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     listedDate: "2026-03-20",
     agent: {
@@ -151,6 +145,6 @@ export function getProperties(){
     return properties
 }
 
-export function getPropertiesById(){
+export function getPropertiesById(id){
   return properties.find((p) => p.id === Number(id))
 }
