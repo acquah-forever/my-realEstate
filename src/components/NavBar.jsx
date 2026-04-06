@@ -4,9 +4,6 @@ import { motion, AnimatePresence } from "motion/react"
 import { NavLink } from 'react-router-dom'
 import { Auth } from '../context/AuthContext'
 
-
-
-
 const NavBar = () => {
   const [menu, setMenu] = useState(false)
   const { user, logOut } = useContext(Auth)

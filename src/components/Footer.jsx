@@ -10,10 +10,9 @@ const Footer = () => {
                         <div className="space-y-5">
                             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Kojo Addo</h2>
                             <p className="max-w-md text-sm sm:text-base text-slate-300 leading-relaxed">Helping you find the right home, investment, or commercial space with confidence, clarity, and care.  </p>
-                           
+
                             <div className="inline-flex rounded-full bg-amber-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-sm shadow-amber-500/20 transition hover:bg-amber-300">Let's make your next move memorable </div>
                         </div>
-
                         <div>
                             <h3 className="text-lg font-semibold text-white mb-5">Explore</h3>
                             <ul className="space-y-3 text-sm sm:text-base text-slate-300">
@@ -21,7 +20,6 @@ const Footer = () => {
                                 <li><a href="#listings" className="transition-colors duration-300 hover:text-amber-400"> Browse listings</a></li>
                                 <li><a href="#reviews" className="transition-colors duration-300 hover:text-amber-400">Client success stories</a></li>
                                 <li><a href="#contact" className="transition-colors duration-300 hover:text-amber-400">Book a consultation</a></li>
-                                
                             </ul>
                         </div>
 
@@ -34,15 +32,11 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-100">Phone</p>
-                                    <a href="tel:+233501234567" className="inline-block transition-colors duration-300 hover:text-amber-400">
-                                        +233 50 123 4567
-                                    </a>
+                                    <a href="tel:+233501234567" className="inline-block transition-colors duration-300 hover:text-amber-400">+233 50 123 4567</a>
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-100">Email</p>
-                                    <a href="mailto:hello@kojoaddo.com" className="inline-block transition-colors duration-300 hover:text-amber-400">
-                                        hello@kojoaddo.com
-                                    </a>
+                                    <a href="mailto:hello@kojoaddo.com" className="inline-block transition-colors duration-300 hover:text-amber-400">hello@kojoaddo.com</a>
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-100">Hours</p>

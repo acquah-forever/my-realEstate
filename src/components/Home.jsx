@@ -10,15 +10,16 @@ import Interior2 from '../assets/buildings/interior2.jpg'
 import Interior3 from '../assets/buildings/interior3.jpg'
 import Interior4 from '../assets/buildings/interior4.jpg'
 import MoreInfo from './MoreInfo'
-import { getProperties } from '../data/data'
+import { getProperties } from '../data/Data'
 import Sales from './Sales'
-import { Comments } from './ClientComments'
+import { getComments } from './ClientComments'
 import Reviews from './Reviews'
 import Form from './Form'
 
 const Home = () => {
 
   const properties = getProperties()
+  const comments  = getComments()
 
   return (
     <div>
@@ -60,12 +61,8 @@ const Home = () => {
       </div>
 
       <div className='bg-amber-100 gap-10 p-15 grid grid-cols-1 justify-between items-center md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center lg:items-center'>
-        {Comments.map((item) => (
-          <Reviews
-            key={item.id}
-            icon={item.icon}
-            comment={item.comment}
-            name={item.name}
+        {comments.map((item) => (
+          <Reviews item = {item} key = {item.id}
           />
         ))}
       </div>

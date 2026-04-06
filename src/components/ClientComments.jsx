@@ -1,6 +1,6 @@
 import { Star } from "lucide-react"
 
-export const Comments = [
+const comments = [
     {
         id: 1,
         icon: [<Star />, <Star />, <Star />, <Star />, <Star />],
@@ -26,3 +26,8 @@ export const Comments = [
         name: "James and Liza Rodriguez"
     }
 ]
+
+export function getComments(){
+    return comments
+
+}
