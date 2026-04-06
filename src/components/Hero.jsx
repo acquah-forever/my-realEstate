@@ -1,10 +1,12 @@
 import React from 'react'
 import {motion} from 'motion/react'
+import Res from '../assets/buildings/hero.jpg'
 
 
 const Hero = () => {
   return (
-    <div className='p-5 min-h-screen flex flex-col justify-center items-center text-center' >
+    <div className='min-h-screen flex flex-col justify-center items-center text-center  dark:bg-slate-600 bg-cover bg-center bg-fixed' style={{ backgroundImage: `url(${Res})` }} >
+      <div className='absolute inset-0 bg-black/60 -z-50'></div>
       <div className='text-white space-y-10'>
         <h1 className='text-6xl sm:text-7xl md:text-8xl text-amber-200'>Find Your Dream Home</h1>
         <h2 className='text-3xl text-white'>We understand the fact that mordern people strive for maximum comfort</h2>

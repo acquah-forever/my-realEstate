@@ -62,7 +62,7 @@ const LogIn = () => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <p className='text-md sm:text-lg'>New Here? &nbsp; <span className='cursor-pointer        text-sky-600  border-b'onClick={handleClick}>Sign Up</span></p>
+                        <p className='text-md sm:text-lg'>New Here? &nbsp; <span className='cursor-pointer text-sky-600  border-b' onClick={handleClick}>Sign Up</span></p>
                     </div>
                 </form>
 

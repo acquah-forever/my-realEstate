@@ -20,11 +20,11 @@ const properties = [
 
   {
     id: 2,
-    title: "Luxury 2-Bedroom with Pool",
-    price: "£80,000",
+    title: "Luxury 4-Bedroom with Pool",
+    price: "£160,000",
     location: "London",
     description: "Premium luxury villa located in one of London's most prestigious neighborhoods.",
-    bedrooms: 5,
+    bedrooms: 4,
     bathrooms: 6,
     area: "5382 sqft",
     features: [
@@ -34,7 +34,7 @@ const properties = [
       "Underfloor Heating",
       "Security System"
     ],
-    images: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlsbGF8ZW58MHwwfDB8fHwy",
+    images: 'https://cdn.pixabay.com/photo/2017/06/16/12/35/home-2409004_1280.jpg',
     listedDate: "2026-03-18",
     agent: {
       name: "Charlotte Evans",
@@ -57,7 +57,7 @@ const properties = [
       "Fitted Kitchen",
       "Rear Garden"
     ],
-    images: "https://images.unsplash.com/photo-1696237461860-630be53f179c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
+    images: "https://cdn.pixabay.com/photo/2018/01/08/16/02/house-3069655_1280.jpg",
     listedDate: "2026-03-15",
     agent: {
       name: "Oliver Smith",
@@ -77,11 +77,10 @@ const properties = [
     area: "1184 sqft",
     features: [
       "Lift Access",
-      "Concierge",
       "Gym Access",
       "Balcony"
     ],
-    images: "https://images.unsplash.com/photo-1717167398817-121e3c283dbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
+    images: "https://cdn.pixabay.com/photo/2017/06/16/12/37/home-2409009_1280.jpg",
     listedDate: "2026-03-10",
     agent: {
       name: "Emily Brown",
@@ -106,7 +105,7 @@ const properties = [
       "Wine Cellar",
       "Landscaped Garden"
     ],
-    images: "https://images.unsplash.com/photo-1626249893774-dc11ed24adbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
+    images: "https://cdn.pixabay.com/photo/2019/11/05/21/55/home-4604695_1280.jpg",
     listedDate: "2026-03-05",
     agent: {
       name: "Henry Clarke",
@@ -118,7 +117,7 @@ const properties = [
     {
     id: 6,
     title: "Cozy 5-Bedroom Mansion",
-    price: "£1500000",
+    price: "£1,500,000",
     location: "Bristol",
     description: "Stunning seafront mansion with uninterrupted coastal views.",
     bedrooms: 5,
@@ -131,7 +130,7 @@ const properties = [
       "Wine Cellar",
       "Landscaped Garden"
     ],
-    images: "https://images.unsplash.com/photo-1661804266944-ce272a0dcdad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHZpbGxhfGVufDB8MHwwfHx8Mg%3D%3D",
+    images: "https://cdn.pixabay.com/photo/2016/07/20/18/04/new-home-1530833_1280.jpg",
     listedDate: "2026-03-05",
     agent: {
       name: "Rom Baro",
