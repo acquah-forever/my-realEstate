@@ -15,7 +15,7 @@ const NavBar = () => {
 
   const parent = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { staggerChildren: 0.25, duration: 0.8 } }
+    visible: { opacity: 1, x: 0, transition: { staggerChildren: 0.25, duration: 0.9 } }
   }
   const children = {
     hidden: { opacity: 0, x: -50 },
@@ -52,7 +52,7 @@ const NavBar = () => {
 
         <AnimatePresence>
           {menu && (
-            <div className='text-white bg-black/60  fixed z-50  px-10'>
+            <div className='text-white bg-black/60 h-20 fixed z-50  p-5'>
               {!user ? (
                 <div>
                   <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-xl flex justify-center space-x-5 sm:hidden'>
