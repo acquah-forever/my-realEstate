@@ -26,10 +26,10 @@ const NavBar = () => {
     <>
       <div className='mb-10 relative'>
         <div className=' px-7 py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
-          <NavLink to= '/'>
-            <a className='text-rose-400 flex items-center space-x-1'>
-              <House className='w-10 h-10' />
-              <h1 className='text-2xl md:text-3xl cursor-pointer'>Kojo Addo</h1>
+          <NavLink to= '/#hero'>
+            <a className='text-red-500 flex items-center space-x-1'>
+              <House className='w-7 h-7' />
+              <h1 className='text-xl md:text-2xl cursor-pointer'>Kojo Addo</h1>
             </a>
           </NavLink>
           <div>

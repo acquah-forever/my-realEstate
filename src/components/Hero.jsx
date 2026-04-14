@@ -5,7 +5,7 @@ import Res from '../assets/buildings/hero.jpg'
 
 const Hero = () => {
   return (
-    <div className='relative min-h-screen flex flex-col justify-center items-center text-center dark:bg-slate-600 bg-cover bg-center bg-fixed overflow-hidden' style={{ backgroundImage: `url(${Res})` }} >
+    <div id='hero' className='relative min-h-screen flex flex-col justify-center items-center text-center dark:bg-slate-600 bg-cover bg-center bg-fixed overflow-hidden' style={{ backgroundImage: `url(${Res})` }} >
       <div className='absolute inset-0 bg-black/20 z-0'></div>
       <div className='relative z-10 text-white space-y-10'>
         <h1 className='text-6xl sm:text-7xl md:text-8xl text-amber-200'>Find Your Dream Home</h1>
