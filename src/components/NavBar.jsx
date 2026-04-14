@@ -15,7 +15,7 @@ const NavBar = () => {
 
   const parent = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { staggerChildren: 0.25, duration: 0.8 } }
+    visible: { opacity: 1, x: 0, transition: { staggerChildren: 0.25, duration: 0.9 } }
   }
   const children = {
     hidden: { opacity: 0, x: -50 },
@@ -23,40 +23,40 @@ const NavBar = () => {
   }
 
   return (
-    <div>
-      <div className='px-7 py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
-        <a href='#' className='text-rose-400 flex items-center space-x-1'>
-          <House className='w-10 h-10' />
-          <h1 className='text-2xl md:text-3xl cursor-pointer'>Kojo Addo</h1>
-        </a>
-        <div>
-          {!user ?
-            <ul className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>
-              <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/'>Home</NavLink></li>
-              <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/logIn">Log In</NavLink></li>
-              <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/signUp">Sign Up</NavLink></li>
-            </ul>
-            :
-            <h1 className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>Hello {user.email} &nbsp; <button className='bg-gray-500 p-2 rounded' onClick={logOut}>LogOut</button></h1>
-          }
-          <div className='flex items-center'>
-            <button className='cursor-pointer text-white flex sm:hidden transition-transform ease-in-out duration-200' onClick={toggleMenu}>{menu ? <X /> : <Menu />}</button>
+    <>
+      <div className='mb-10 relative'>
+        <div className=' px-7 py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
+          <NavLink to= '/#hero'>
+            <li className='text-red-500 flex items-center space-x-1'>
+              <House className='w-7 h-7' />
+              <h1 className='text-xl md:text-2xl cursor-pointer'>Kojo Addo</h1>
+            </li>
+          </NavLink>
+          <div>
+            {!user ?
+              <ul className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>
+                <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/'>Home</NavLink></li>
+                <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/logIn">Log In</NavLink></li>
+                <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/signUp">Sign Up</NavLink></li>
+              </ul>
+              :
+              <h1 className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>Hello {user.email} &nbsp; <button className='bg-gray-500 p-2 rounded' onClick={logOut}>LogOut</button></h1>
+            }
+            <div className='flex items-center'>
+              <button className='cursor-pointer text-white flex sm:hidden transition-transform ease-in-out duration-200' onClick={toggleMenu}>{menu ? <X /> : <Menu className='text-black' />}</button>
+            </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
       <div>
+
         <AnimatePresence>
           {menu && (
-            <div className='text-white rounded-xl flex justify-center items-center'>
-
+            <div className='text-white bg-black/60 h-20 fixed z-50  p-5'>
               {!user ? (
                 <div>
-                  <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-2xl flex justify-center space-x-5 sm:hidden'>
-                    <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/'>Home</NavLink></motion.li>
+                  <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-xl flex justify-center space-x-5 sm:hidden'>
+                    <motion.li variants={children} className="cursor-pointer  inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/'>Home</NavLink></motion.li>
                     <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/logIn'>Log In</NavLink></motion.li>
                     <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/signUp'>Sign Up</NavLink></motion.li>
                   </motion.ul>
@@ -70,7 +70,7 @@ const NavBar = () => {
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </>
   )
 }
 

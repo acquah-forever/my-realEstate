@@ -22,7 +22,7 @@ const Home = () => {
   const comments  = getComments()
 
   return (
-    <div>
+    <div className='bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600'>
       <Hero />
       <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior})` }}>
         <div className='absolute bg-black/20 inset-0'></div>

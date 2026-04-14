@@ -26,8 +26,8 @@ const LogIn = () => {
     }
 
     return (
-        <div className=' max-w-xl mx-auto p-7'>
-            <div className='py-20 px-10 flex flex-col justify-center items-center w-full bg-indigo-300/50 rounded-2xl'>
+        <div className='max-w-xl mx-auto p-7'>
+            <div className='mt-30 py-20 px-10 flex flex-col justify-center items-center w-full bg-indigo-300/50 rounded-2xl'>
                 <div className='mb-10'>
                     <h1 className='text-5xl font-semibold'>Kojo Addo</h1>
                 </div>
