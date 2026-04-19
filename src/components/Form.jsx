@@ -10,7 +10,7 @@ const Form = () => {
     }
 
     return (
-        <div className='flex justify-center px-4'>
+        <div id='form' className='flex justify-center px-4'>
             <form className='p-5 bg-slate-100 max-w-3xl w-full' onSubmit={handleSubmit(onSubmit)}>
                 <div className='flex flex-col mb-10'>
                     <h1 className='mb-7 text-center text-2xl md:text-3xl font-semibold'>Ready to Stop Searching and <br /> Start Living?</h1>
