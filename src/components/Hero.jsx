@@ -9,7 +9,7 @@ const Hero = () => {
       <div className='absolute inset-0 bg-black/20 z-0'></div>
       <div className='relative z-10 text-white space-y-10'>
         <h1 className='text-5xl sm:text-6xl md:text-7xl text-amber-200'>Find Your Dream Home</h1>
-        <h2 className='text-2xl sm:text-3xl text-white'>We understand the fact that mordern people strive for maximum comfort</h2>
+        <h2 className='px-7 text-2xl sm:text-3xl text-white'>We understand the fact that mordern people strive for maximum comfort</h2>
         <button className="btn btn-secondary text-2xl sm:text-3xl md:text-4xl p-10">Get Free Appointment</button>
       </div>
 
