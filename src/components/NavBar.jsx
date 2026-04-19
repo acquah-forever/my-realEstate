@@ -34,7 +34,7 @@ const NavBar = () => {
           </NavLink>
           <div>
             {!user ?
-              <ul className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>
+              <ul className='hidden text-lg text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>
                 <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to='/'>Home</NavLink></li>
                 <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/logIn">Log In</NavLink></li>
                 <li className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out"><NavLink to="/signUp">Sign Up</NavLink></li>
@@ -43,7 +43,7 @@ const NavBar = () => {
               <h1 className='hidden text-xl text-white bg-black/30 rounded-lg px-5 py-2 sm:flex  space-x-7'>Hello {user.email} &nbsp; <button className='bg-gray-500 p-2 rounded' onClick={logOut}>LogOut</button></h1>
             }
             <div className='flex items-center'>
-              <button className='cursor-pointer text-white flex sm:hidden transition-transform ease-in-out duration-200' onClick={toggleMenu}>{menu ? <X /> : <Menu className='text-black' />}</button>
+              <button className='cursor-pointer text-white flex sm:hidden transition-transform ease-in-out duration-200' onClick={toggleMenu}>{menu ? <X className='text-black' /> : <Menu className='text-black' />}</button>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ const NavBar = () => {
             <div className='text-white bg-black/60 h-20 fixed z-50  p-5'>
               {!user ? (
                 <div>
-                  <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-xl flex justify-center space-x-5 sm:hidden'>
+                  <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-lg flex justify-center space-x-5 sm:hidden'>
                     <motion.li variants={children} className="cursor-pointer  inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/'>Home</NavLink></motion.li>
                     <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/logIn'>Log In</NavLink></motion.li>
                     <motion.li variants={children} className="cursor-pointer inline-block border-b-2 border-transparent hover:border-white transition-all duration-500 ease-in-out" onClick={() => setMenu(false)}><NavLink to='/signUp'>Sign Up</NavLink></motion.li>
