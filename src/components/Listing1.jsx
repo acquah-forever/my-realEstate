@@ -14,7 +14,7 @@ const ListingForTheDay = () => {
                         <h1>200Sqm</h1>
                     </div>
                     <div>
-                        <button className='text-white bg-linear-to-br from-green-400 to-green-600 px-8 py-2 rounded-lg'>
+                        <button className='cursor-pointer text-white font-semibold bg-linear-to-br from-green-500 to-green-700 px-8 py-2 rounded-lg hover:scale-120 transition-all duration-300'>
                             View
                         </button>
                     </div>
