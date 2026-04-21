@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Res from '../assets/buildings/hero.jpg'
 
 
@@ -20,7 +20,7 @@ const Sales = ({ property }) => {
                     </div>
                     <div className='flex justify-between items-center'>
                         <p className="text-3xl font-bold text-green-200 mt-3">{property.price}</p>
-                        <Link to={`property/${property.id}`} className="btn btn-primary w-30">View</Link>
+                        <NavLink to={`property/${property.id}`} className="btn btn-primary w-30">View</NavLink>
                     </div>
                 </div>
             </div>

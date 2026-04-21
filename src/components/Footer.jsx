@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className=" bg-slate-950 text-slate-200">
+        <footer className=" bg-black text-slate-200">
             <div className="relative overflow-hidden px-6 py-12 sm:px-8 lg:px-12">
                 <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(248,180,0,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.14),transparent_20%)]" />
                 <div className="relative z-10 max-w-7xl mx-auto">

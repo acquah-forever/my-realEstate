@@ -1,5 +1,6 @@
 import React from 'react'
 import { House, Goal, Smile } from 'lucide-react'
+import { HashLink } from 'react-router-hash-link'
 
 
 const MoreInfo = () => {
@@ -35,7 +36,7 @@ const MoreInfo = () => {
                 </div>
             </div>
             <div className='mt-10 flex justify-center'>
-            <button className='cursor-pointer text-white text-xl sm:text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</button>
+            <HashLink smooth to='/#form' className='cursor-pointer text-white text-xl sm:text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</HashLink>
             </div>
         </div>
     )
