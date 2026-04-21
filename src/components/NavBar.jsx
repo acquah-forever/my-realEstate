@@ -52,7 +52,7 @@ const NavBar = () => {
 
         <AnimatePresence>
           {menu && (
-            <div className='text-white bg-black/30 backdrop-blur-2xl h-20 w-full mt-2 fixed z-50 p-5 sm:hidden'>
+            <div className='text-white bg-black/30 backdrop-blur-2xl min-h-20 w-full mt-2 fixed z-50 p-5 sm:hidden'>
               {!user ? (
                 <div>
                   <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-lg flex justify-center space-x-5 sm:hidden'>

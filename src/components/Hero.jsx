@@ -12,7 +12,7 @@ const Hero = () => {
       <div className='relative z-10 text-white space-y-10'>
         <h1 className='text-5xl sm:text-6xl md:text-7xl text-amber-200'>Find Your Dream Home</h1>
         <h2 className='px-7 text-2xl sm:text-3xl text-white'>We understand the fact that mordern people strive for maximum comfort</h2>
-        <HashLink smooth to='/#form' className="btn btn-secondary text-2xl sm:text-3xl md:text-4xl p-10">Get Free Appointment</HashLink>
+        <HashLink smooth to='/#form' className="bg-linear-to-br from-pink-400 to-pink-700 px-5 sm:px-7 md:px-10 py-4 rounded-md text-xl sm:text-2xl md:text-3xl">Get Free Appointment</HashLink>
       </div>
 
     </div>
