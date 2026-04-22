@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <>
       <div className='mb-10 relative'>
-        <div className=' px-7 py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-50 flex justify-between items-center '>
+        <div className=' px-7 py-2 backdrop-blur-2xl top-0 left-0 fixed w-full z-70 flex justify-between items-center '>
           <NavLink to= '/#hero'>
             <li className='text-red-500 flex items-center space-x-1'>
               <House className='w-7 h-7' />
@@ -52,7 +52,7 @@ const NavBar = () => {
 
         <AnimatePresence>
           {menu && (
-            <div className='text-white bg-black/30 backdrop-blur-2xl min-h-20 w-full mt-2 fixed z-50 p-5 sm:hidden'>
+            <div className='text-white bg-black/30 backdrop-blur-2xl min-h-20 w-full mt-2 fixed z-70 p-5 sm:hidden'>
               {!user ? (
                 <div>
                   <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='text-lg flex justify-center space-x-5 sm:hidden'>

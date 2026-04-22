@@ -1,4 +1,4 @@
-const showCase = [
+const showcase = [
 
     {
         id: 1,
@@ -8,7 +8,7 @@ const showCase = [
         description: "A stunning loft conversion, blending Industrial Chic with warm, contemporary living",
         bedrooms: 4,
         bathrooms: 2,
-        area: "3014 sqft",
+        area: "3014",
         features: ["Centralized Heating", "Garage", "Double Glazing"],
         images: "https://images.unsplash.com/photo-1592839656073-833413ae8874?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         listedDate: "2026-03-20",
@@ -29,7 +29,7 @@ const showCase = [
         description: "A staet-of-the-art build filled with a serene and luscious envronment",
         bedrooms: 3,
         bathrooms: 2,
-        area: "2880 sqft",
+        area: "2880",
         features: ["Open Garden View", "Garage", "Elevators"],
         images: "https://images.unsplash.com/photo-1647452375084-3ad0db6c9331?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         listedDate: "2026-04-10",
@@ -49,7 +49,7 @@ const showCase = [
         description: "Studio Apartment suitable for the ever ready student or recently employed.",
         bedrooms: 1,
         bathrooms: 1,
-        area: "1200 sqft",
+        area: "1200",
         features: ["Foyer", "highspeed Internet", "Bike Garage"],
         images: "https://images.unsplash.com/photo-1466098672325-c9ddda4b7975?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         listedDate: "2026-03-7",
@@ -69,9 +69,9 @@ const showCase = [
         description: "Cozy apartment fitted with latest furnishings with Severn Bach View",
         bedrooms: 3,
         bathrooms: 3,
-        area: "1370 sqft",
+        area: "1370",
         features: ["Foyer", "Garage", "Central Heating"],
-        images: "https://images.unsplash.com/photo-1466098672325-c9ddda4b7975?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        images: "https://images.unsplash.com/photo-1711426793021-ae58d127d79c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         listedDate: "2026-03-7",
         agent: {
             name: "Jack Reacher",
