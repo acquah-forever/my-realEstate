@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getShowCaseById } from '../data/Showcase'
-import { h1 } from 'motion/react-client'
+
 
 const ShowcaseDetails = () => {
     const [showCase, setShowCase] = useState(null)
@@ -10,10 +10,11 @@ const ShowcaseDetails = () => {
 
 
     useEffect(() => {
-        const showcase = getShowCaseById()
+        const showcase = getShowCaseById(id)
 
         if (!showcase) {
             navigate('/')
+            return
         } else {
             setShowCase(showcase)
         }
@@ -25,7 +26,7 @@ const ShowcaseDetails = () => {
     }
 
     return (
-        <div>
+        <div className=''>
             <h1>{showCase.title}</h1>
 
         </div>

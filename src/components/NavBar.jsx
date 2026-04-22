@@ -63,9 +63,9 @@ const NavBar = () => {
                 </div>
               ) : (
                 <motion.ul variants={parent} initial='hidden' animate='visible' exit={{ opacity: 0, x: -50 }} className='flex justify-center sm:hidden'>
-                  <motion.li className='flex items-center' >
-                    <h1 variants={children} className='text-lg'>Hello {user.email} &nbsp;</h1>
-                    <button variants={children} className='bg-gray-500 p-2 rounded' onClick={() => { logOut(); setMenu(false) }}>LogOut</button>
+                  <motion.li variants={children} className='flex items-center' >
+                    <h1  className='text-lg'>Hello {user.email} &nbsp;</h1>
+                    <button  className='bg-gray-500 p-2 rounded' onClick={() => { logOut(); setMenu(false) }}>LogOut</button>
                     </motion.li>
                 </motion.ul>
               )}
