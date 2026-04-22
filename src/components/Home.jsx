@@ -1,14 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
-import Listing1 from './Listing1'
-import Listing2 from './Listing2'
-import Listing3 from './Listing3'
-import Listing4 from './Listing4'
 import Details from './Details'
-import Interior from '../assets/buildings/interior.jpg'
-import Interior2 from '../assets/buildings/interior2.jpg'
-import Interior3 from '../assets/buildings/interior3.jpg'
-import Interior4 from '../assets/buildings/interior4.jpg'
 import MoreInfo from './MoreInfo'
 import { getProperties } from '../data/Data'
 import Sales from './Sales'
@@ -24,30 +16,6 @@ const Home = () => {
   return (
     <div className='bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600'>
       <Hero />
-      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior})` }}>
-        <div className='absolute bg-black/20 inset-0'></div>
-        <div className='relative z-10'>
-          <Listing1 />
-        </div>
-      </div>
-      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior2})` }}>
-        <div className='absolute bg-black/20 inset-0'></div>
-        <div className='relative z-10'>
-          <Listing2 />
-        </div>
-      </div>
-      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior3})` }}>
-        <div className='absolute bg-black/20 inset-0'></div>
-        <div className='relative z-10'>
-          <Listing3 />
-        </div>
-      </div>
-      <div className='h-screen relative bg-fixed bg-cover bg-center' style={{ backgroundImage: `url(${Interior4})` }}>
-        <div className='absolute bg-black/20 inset-0'></div>
-        <div className='relative z-10'>
-          <Listing4 />
-        </div>
-      </div>
       <div className='bg-amber-100'>
         <Details />
       </div>

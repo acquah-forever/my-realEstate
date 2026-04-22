@@ -20,7 +20,7 @@ const showCase = [
 
     },
 
-        
+
     {
         id: 2,
         title: "Lovely Spacious Apartment with Garden View",
@@ -41,18 +41,38 @@ const showCase = [
 
     },
 
-        {
+    {
         id: 3,
         title: "Studio Aprtment with Modernistic Fittings",
         price: "£420,000",
-        location: "Bristol",
+        location: "Coventry",
         description: "Studio Apartment suitable for the ever ready student or recently employed.",
         bedrooms: 1,
         bathrooms: 1,
         area: "1200 sqft",
         features: ["Foyer", "highspeed Internet", "Bike Garage"],
-        images: "https://images.unsplash.com/photo-1647452375084-3ad0db6c9331?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        listedDate: "2026-04-10",
+        images: "https://images.unsplash.com/photo-1466098672325-c9ddda4b7975?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        listedDate: "2026-03-7",
+        agent: {
+            name: "Jack Reacher",
+            phone: "+44 7700 900001",
+            email: "jack.reacher@estateuk.com"
+        }
+
+    },
+
+    {
+        id: 4,
+        title: "En Suite Building with Breezy Beach View",
+        price: "£250,000",
+        location: "Cardiff",
+        description: "Cozy apartment fitted with latest furnishings with Severn Bach View",
+        bedrooms: 3,
+        bathrooms: 3,
+        area: "1370 sqft",
+        features: ["Foyer", "Garage", "Central Heating"],
+        images: "https://images.unsplash.com/photo-1466098672325-c9ddda4b7975?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        listedDate: "2026-03-7",
         agent: {
             name: "Jack Reacher",
             phone: "+44 7700 900001",
@@ -66,7 +86,7 @@ export function getShowCase() {
     return showcase
 }
 
-export getShowCaseById(id){
+export function getShowCaseById(id){
     return showcase.find((e) => e.id === Number(id))
 
 }

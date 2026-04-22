@@ -5,6 +5,7 @@ import LogIn from './components/LogIn'
 import SignUp from './components/SignUp'
 import { Routes, Route } from "react-router-dom"
 import AuthDetails from './context/AuthContext'
+import ShowcaseDetails from './components/ShowcaseDetails'
 import PropertyDetails from './components/PropertyDetails'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/logIn' element={<LogIn />} />
           <Route path='/signUp' element={<SignUp />} />
+          <Route path='/showcase/:id' element={<ShowcaseDetails />} />
           <Route path='/property/:id' element={<PropertyDetails />} />
         </Routes>
       </div>
