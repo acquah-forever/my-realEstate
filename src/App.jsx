@@ -3,10 +3,13 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import LogIn from './components/LogIn'
 import SignUp from './components/SignUp'
-import { Routes, Route } from "react-router-dom"
 import AuthDetails from './context/AuthContext'
+import ShowcaseDetails from './components/ShowcaseDetails'
 import PropertyDetails from './components/PropertyDetails'
 import Footer from './components/Footer'
+
+import { Routes, Route } from "react-router-dom"
+
 
 const App = () => {
   return (
@@ -17,6 +20,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/logIn' element={<LogIn />} />
           <Route path='/signUp' element={<SignUp />} />
+          <Route path='/showcasedetails/:id' element={<ShowcaseDetails />} />
           <Route path='/property/:id' element={<PropertyDetails />} />
         </Routes>
       </div>

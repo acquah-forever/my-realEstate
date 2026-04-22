@@ -36,7 +36,7 @@ const MoreInfo = () => {
                 </div>
             </div>
             <div className='mt-10 flex justify-center'>
-            <HashLink smooth to='/#form' className='cursor-pointer text-white text-xl sm:text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Apointment</HashLink>
+            <HashLink smooth to='/#form' className='cursor-pointer text-white text-xl sm:text-2xl bg-pink-400 p-5 mx-auto rounded-lg mt-7'>Get Free Appointment</HashLink>
             </div>
         </div>
     )
