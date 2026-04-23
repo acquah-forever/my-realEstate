@@ -2,7 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
+
 const ShowcaseDetails = ({ details }) => {
+
     return (
         <div className='p-10 text-white min-h-screen relative bg-center bg-cover bg-fixed bg-no-repeat' style={{ backgroundImage: `url(${details.images})` }}>
             <div className='absolute inset-0 bg-black/20'></div>
@@ -27,7 +29,7 @@ const ShowcaseDetails = ({ details }) => {
                 </div>
 
                 <div className='w-27 hover:scale-120 ease-in-out transition-all duration-200'>
-                    <NavLink to={`details/${details.id}`} className='bg-linear-to-br from-green-400 to-green-600 px-10 w-70 rounded p-3'>View</NavLink>
+                    <NavLink to={`/showcase/${details.id}`} className='bg-linear-to-br from-green-400 to-green-600 px-10 w-70 rounded p-3'>View</NavLink>
                 </div>
             </div>
 
