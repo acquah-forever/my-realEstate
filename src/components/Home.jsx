@@ -2,13 +2,15 @@ import React from 'react'
 import Hero from './Hero'
 import Details from './Details'
 import MoreInfo from './MoreInfo'
-import { getProperties } from '../data/Data'
-import { getComments } from './ClientComments'
-import { getShowCase } from '../data/Showcase'
 import Sales from './Sales'
 import Reviews from './Reviews'
 import Form from './Form'
 import Showcase from './Showcase'
+
+import { getProperties } from '../data/Data'
+import { getComments } from './ClientComments'
+import { getShowCase } from '../data/Showcase'
+
 
 const Home = () => {
 
@@ -17,7 +19,7 @@ const Home = () => {
   const showcase = getShowCase()
 
   return (
-    <div className='bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600'>
+    <div className=''>
       <Hero />
       <div className=''>
         {showcase.map((details) => (

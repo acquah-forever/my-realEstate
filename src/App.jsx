@@ -14,7 +14,7 @@ import { Routes, Route } from "react-router-dom"
 const App = () => {
   return (
     <AuthDetails>
-      <div className='bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600 min-h-screen relative bg-slate-900 text-black' >
+      <div className='bg-linear-to-br from-slate-900 to-slate-700 min-h-screen relative bg-slate-900 text-black' >
         <NavBar className='relative z-20' />
         <Routes>
           <Route path='/' element={<Home />} />

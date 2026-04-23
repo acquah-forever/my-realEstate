@@ -10,6 +10,7 @@ const ShowcaseDetails = () => {
 
 
     useEffect(() => {
+        
         const showcase = getShowCaseById(id)
 
         if (!showcase) {
