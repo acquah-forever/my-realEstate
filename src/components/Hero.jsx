@@ -7,9 +7,9 @@ import { HashLink } from 'react-router-hash-link'
 const Hero = () => {
 
   return (
-    <div id='hero' className='relative min-h-screen flex flex-col justify-start  text-center bg-cover bg-center bg-fixed overflow-hidden' >
+    <div id='hero' className='bg-[url("https://images.unsplash.com/photo-1626249893783-cc4a9f66880a?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]relative min-h-screen flex flex-col justify-start  text-center bg-cover bg-center bg-fixed bg-no-repeat overflow-hidden' >
       <div className='absolute inset-0 bg-black/20 z-0'></div>
-      <div className='relative z-10 text-white text-left space-y-10'>
+      <div className='relative z-10 text-white text-left space-y-10 px-7 py-10 mt-70'>
         <h1 className='text-5xl sm:text-6xl md:text-7xl text-amber-200'>Find Your Dream Home</h1>
         <h2 className='text-2xl sm:text-3xl text-white'>We understand the fact that mordern people strive for maximum comfort</h2>
         <div className='mt-15 w-95 hover:scale-110 transition-all ease-in-out duration-300'>
