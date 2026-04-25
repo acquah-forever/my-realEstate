@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className='text-5xl sm:text-6xl text-center sm:text-left md:text-7xl text-amber-200'>Find Your Dream Home</h1>
         <h2 className='text-2xl text-center sm:text-left sm:text-3xl text-white'>We understand the fact that modern people strive for maximum comfort</h2>
         <div className='mt-15 w-fit mx-auto sm:mx-0 hover:scale-110 transition-all ease-in-out duration-300'>
-          <HashLink to='/#form' className="relative z-10 mt-10 text-white bg-linear-to-br from-green-400 to-green-700 px-5 sm:px-7 md:px-10 py-4 rounded-md text-xl sm:text-2xl md:text-3xl">Get Free Appointment</HashLink>
+          <HashLink to='/#form' className="border-2 relative z-10 mt-10 text-white bg-linear-to-br from-blue-400/50 px-5 sm:px-7 md:px-10 py-4 rounded-md text-xl sm:text-2xl md:text-3xl">Get Free Appointment</HashLink>
         </div>
       </div>
 
