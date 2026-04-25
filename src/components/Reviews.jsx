@@ -13,7 +13,7 @@ const Reviews = ({ item }) => {
   return (
     <motion.div variants={parent} initial="hidden" whileInView="visible" viewport={{once:false, amount:0.5}} className="bg-slate-200/70 p-5 rounded-xl shadow-md space-y-5 flex flex-col items-center text-center h-full">
 
-      <motion.span variants={children} variants={children} className="text-amber-400 text-3xl flex">{item.icon}</motion.span>
+      <motion.span variants={children}  className="text-amber-400 text-3xl flex">{item.icon}</motion.span>
 
       <motion.p variants={children} className="text-gray-600 text-xl font-semibold">{item.comment}</motion.p>
 

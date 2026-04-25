@@ -1,12 +1,14 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { motion } from 'motion/react'
+import { useNavigate } from 'react-router-dom'
 const Form = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
+    const navigate = useNavigate()
 
     function onSubmit(data) {
-        alert(`Credentials:${data.firstname},${data.lastname},${data.phone},${data.email}${data.services}...submitted`)
+        navigate('/') 
     }
 
     const parent = {

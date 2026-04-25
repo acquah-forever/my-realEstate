@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { motion, spring } from 'motion/react'
+import { motion } from 'motion/react'
 
 const ShowcaseDetails = ({ details }) => {
 
@@ -37,7 +37,7 @@ const ShowcaseDetails = ({ details }) => {
                     </div>
                 </div>
 
-                <motion.div variants={children} whileHover={{scale:1.2}} whileTap={{scale:0.8}} transition={{type:"spring", stiffness:300, damping:7}} className='w-27  '>
+                <motion.div variants={children} whileHover={{scale:1.2}} whileTap={{scale:0.8}} transition={{type:"spring", stiffness:300, damping:7}} className='inline-block'>
                     <NavLink  to={`/showcase/${details.id}`} className='bg-linear-to-br from-green-400 to-green-600 px-10 w-70 rounded p-3'>View</NavLink>
                 </motion.div>
             </motion.div>
