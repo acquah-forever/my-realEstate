@@ -27,7 +27,7 @@ const ShowcaseDetails = () => {
     }
 
     return (
-        <div className=''>
+        <div className='text-white pt-20'>
             <h1>{showCase.title}</h1>
 
         </div>

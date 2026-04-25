@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className='px-7 py-2 backdrop-blur-2xl  top-0 left-0 sticky w-full z-70 flex justify-between items-center '>
+      <div className='px-7 py-2 backdrop-blur-lg top-0 left-0 fixed w-full z-70 flex justify-between items-center '>
         <NavLink to='/#hero'>
           <li className='text-red-500 flex items-center space-x-1'>
             <House className='w-7 h-7' />
