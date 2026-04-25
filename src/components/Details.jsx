@@ -1,14 +1,26 @@
 import React from 'react'
+import { motion } from 'motion/react'
 
 const Details = () => {
+
+    const parent = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.3, duration: 0.6 } }
+    }
+
+    const children = {
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0 }
+    }
+
     return (
-        <div className='p-10 grid md:flex md:gap-20' id='details'>
-            <div className='mt-15'>
+        <motion.div variants={parent} initial="hidden" whileInView="visible" viewport={{once:false, amount:0.5}} className='p-10 grid md:flex md:gap-20' id='details'>
+            <motion.div variants={children} className='mt-15'>
                 <h1 className='text-xl md:text-2xl'>Exclusive Guidaance for</h1>
                 <h1 className='mt-10 text-3xl font-semibold'>Buyers, Sellers & Investors</h1>
-            </div>
+            </motion.div>
 
-            <div className='mt-15 tracking-tighter'>
+            <motion.div variants={children} className='mt-15 tracking-tighter'>
                 <div>
                     <div className='border'></div>
                     <div className='p-5 flex flex-col gap-4 md:flex-row md:gap-10 '>
@@ -46,10 +58,10 @@ const Details = () => {
                         <h1 className='text-md md:text-xl'>Skip endless searches. We leverage exclusive access and expert negotiation to pinpoint your ideal home, ensuring a smooth, swift purchase. Your next chapter begins today.</h1>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
 
-        </div>
+        </motion.div>
     )
 }
 

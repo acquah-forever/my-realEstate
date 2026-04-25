@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { motion } from 'motion/react'
+import { motion, spring } from 'motion/react'
 
 const ShowcaseDetails = ({ details }) => {
 
     const parent = {
         hidden: { opacity: 0, y: -50 },
-        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2, duration: 0.1 } }
+        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.09, duration: 0.1 } }
     }
 
     const children = {
@@ -37,9 +37,9 @@ const ShowcaseDetails = ({ details }) => {
                     </div>
                 </div>
 
-                <div className='w-27 hover:scale-120 ease-in-out transition-all duration-200'>
-                    <motion.NavLink variants={children} to={`/showcase/${details.id}`} className='bg-linear-to-br from-green-400 to-green-600 px-10 w-70 rounded p-3'>View</motion.NavLink>
-                </div>
+                <motion.div variants={children} whileHover={{scale:1.2}} whileTap={{scale:0.8}} transition={{type:"spring", stiffness:300, damping:7}} className='w-27  '>
+                    <NavLink  to={`/showcase/${details.id}`} className='bg-linear-to-br from-green-400 to-green-600 px-10 w-70 rounded p-3'>View</NavLink>
+                </motion.div>
             </motion.div>
 
         </div>
