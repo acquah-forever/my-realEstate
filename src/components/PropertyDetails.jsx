@@ -22,7 +22,7 @@ const PropertyDetails = () => {
     }
 
     return (
-        <div className="px-5 min-h-screen flex justify-center items-center bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600">
+        <div className="mt-30 px-5 min-h-screen flex justify-center items-center bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600">
             <div className="flex flex-col lg:flex-row max-w-7xl w-full h-200 bg-white rounded-2xl shadow-lg overflow-scroll">
                 <div className="lg:w-2/3 h-96 lg:h-auto relative shrink-0">
                     <img className="w-full h-full object-cover" src={property.images} alt={property.title} />

@@ -16,7 +16,7 @@ const Details = () => {
     return (
         <motion.div variants={parent} initial="hidden" whileInView="visible" viewport={{once:false, amount:0.5}} className='p-10 grid md:flex md:gap-20' id='details'>
             <motion.div variants={children} className='mt-15'>
-                <h1 className='text-xl md:text-2xl'>Exclusive Guidaance for</h1>
+                <h1 className='text-xl md:text-2xl'>Exclusive Guidance for</h1>
                 <h1 className='mt-10 text-3xl font-semibold'>Buyers, Sellers & Investors</h1>
             </motion.div>
 

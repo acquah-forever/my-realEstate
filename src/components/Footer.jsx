@@ -35,7 +35,7 @@ const Footer = () => {
                                     <a href="tel:+233501234567" className="inline-block transition-colors duration-300 hover:text-amber-400">+233 50 123 4567</a>
                                 </div>
                                 <div>
-                                    <p className="font-medium text-slate-100">Email</p>
+                                    <p className="font-medium text-slate-100">Mail</p>
                                     <a href="mailto:hello@kojoaddo.com" className="inline-block transition-colors duration-300 hover:text-amber-400">hello@kojoaddo.com</a>
                                 </div>
                                 <div>
