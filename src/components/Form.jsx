@@ -7,7 +7,7 @@ const Form = () => {
     const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
 
-    function onSubmit(data) {
+    function onSubmit() {
         navigate('/') 
     }
 

@@ -17,7 +17,7 @@ const Footer = () => {
                             <h3 className="text-lg font-semibold text-white mb-5">Explore</h3>
                             <ul className="space-y-3 text-sm sm:text-base text-slate-300">
                                 <li> <a href="#services" className="transition-colors duration-300 hover:text-amber-400">Selling your property</a></li>
-                                <li><a href="#listings" className="transition-colors duration-300 hover:text-amber-400"> Browse listings</a></li>
+                                <li><a href="#listings" className="transition-colors duration-300 hover:text-amber-400"> Browse Listings</a></li>
                                 <li><a href="#reviews" className="transition-colors duration-300 hover:text-amber-400">Client success stories</a></li>
                                 <li><a href="#contact" className="transition-colors duration-300 hover:text-amber-400">Book a consultation</a></li>
                             </ul>
